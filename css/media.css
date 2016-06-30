@@ -120,7 +120,8 @@
         font: 45px/54.7px LarsseitMedium;
     }
     .home {
-        display: none;
+        opacity: 0;
+/*        display: none;*/
 /*        visibility: hidden;*/
         /*        background: #f0f0f0 url(../img/background1680.png) no-repeat top center;*/
     }

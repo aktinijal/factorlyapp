@@ -21,7 +21,7 @@ $(document).ready(function () {
                                     $('.arrow').animate({top : 1000}, 150, function(){
                                         
 
-                                    $('.home').fadeIn(500);
+                                    $('.home').animate({opacity : 1}, 700);
                                             
                                         //                                    $('.home').css({visibility:'visible'});
                                     });
@@ -75,8 +75,7 @@ $(document).ready(function () {
 
 
 
-    /*******************Expertize**********************/
-setTimeout(function () {    
+    /*******************Expertize**********************/   
 var expertizeItemHeight = $(".app").height();
     $(".learn-div").height(expertizeItemHeight);
     $(".idea").height(expertizeItemHeight);
@@ -85,7 +84,6 @@ var expertizeItemHeight = $(".app").height();
         $(".learn-div").height(expertizeItemHeight);
         $(".idea").height(expertizeItemHeight);
     });
-}, 6000);
 
     /********************Slick************************/
     var $status = $('.pagingInfo');
