@@ -1,0 +1,251 @@
+@media (max-width: 1900px) {
+    .tempor {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 4284px;
+        z-index: -1;
+    }
+    .first-triangle {
+        position: absolute;
+        top: -1500px;
+        width: 100%;
+        height: 1051px;
+        background: url(../img/background-topfirst1680.png) no-repeat top left
+    }
+    .second-triangle {
+        position: absolute;
+        top: 1500px;
+        width: 100%;
+        height: 4034px;
+        background: url(../img/background-topsecond1680.png) no-repeat bottom left;
+    }
+    .phone-wrapper{
+        position: relative;
+        top: 250px;
+        right: 200px;
+/*        width: 498px;*/
+        height: 427px;
+    }
+    .phone {
+        position: absolute;
+        right: 0;
+        top: -1000px;
+    }
+    .phone-shadow,
+    .phone-shadow2,
+    .phone-shadow3,
+    .phone-shadow4 {
+        position: absolute;
+        right: 45px;
+        top: -1050px;
+    }
+    .watch {
+        position: absolute;
+        right: 150px;
+        top: -700px;
+    }
+    .watch2{
+        position: absolute;
+        right: 355px;
+        top: -775px;
+    }
+    .watch3 {
+        position: absolute;
+        right: 375px;
+        top: -790px;
+    }
+    .arrow {
+        position: absolute;
+        right: 49%;
+        top: -100px;
+    }
+    
+    /*
+    .triangle-top {
+        margin-top: 250px;
+        width: 0;
+        height: 0;
+        border-bottom: 900px solid #cfdee8;
+        border-left: 500px solid transparent;
+        border-right: 0 solid transparent;
+        z-index: 0;
+    }
+    .rectangle {
+        padding-top: 80px;
+        width: 100%;
+        height: 5100px;
+        background-color: #cfdee8;
+        z-index: 0;
+    }
+    .triangle-bottom {
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-top: 900px solid #cfdee8;
+        border-left: 0 solid transparent;
+        border-right: 500px solid transparent;
+        z-index: 0;
+    }
+    .triangle-footer {
+        margin-top: -1200px;
+        width: 0;
+        height: 0;
+        border-bottom: 900px solid #f0f0f0;
+        border-left: 500px solid transparent;
+        border-right: 0 solid transparent;
+        z-index: 0;
+    }
+    .rectangle-footer {
+        width: 100%;
+        height: 333px;
+        background-color: #f0f0f0;
+        z-index: 0;
+    }
+*/
+    .wrapper {
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+    p {
+        font: 23px/40px LarsseitRegular;
+    }
+    h1.title {
+        margin-bottom: 40px;
+        font: 60px/75px LarsseitMedium;
+    }
+    h2 {
+        margin-bottom: 30px;
+        font: 45px/54.7px LarsseitMedium;
+    }
+    .home {
+        display: none;
+/*        visibility: hidden;*/
+        /*        background: #f0f0f0 url(../img/background1680.png) no-repeat top center;*/
+    }
+    .header {
+        height: 125px;
+        padding: 45px 65px;
+    }
+    .logo img:first-child {
+        width: 36px;
+        height: 36px;
+    }
+    .logo img:last-child {
+        margin-left: 15px;
+        width: 100px;
+        height: 23px;
+    }
+    .navigation li,
+    .social li,
+    .copyright p {
+        margin-right: 30px;
+        height: 35px;
+    }
+    .navigation a,
+    .social a {
+        font: 20px/35px LarsseitMedium;
+    }
+    .navigation a:hover,
+    .active {
+        background: url(../img/navactive1680.png) no-repeat center;
+    }
+    /**********************HERO**********************/
+    .hero {
+        padding-top: 80px;
+        padding-bottom: 365px;
+    }
+    button.request {
+        margin-top: 50px;
+        width: 175px;
+        height: 75px;
+        font: 20px/35px LarsseitMedium;
+    }
+/*
+    .hero .arrowBottom {
+        margin: 125px auto 200px;
+        width: 40px;
+    }
+*/
+    /**********************EXPERTIZE**********************/
+    h4.sectionName {
+        width: 157px;
+        top: 170px;
+        font-size: 23px;
+    }
+    .sectionName img {
+        width: 35px;
+        margin-right: 20px;
+    }
+    .expertize {
+        margin-bottom: 240px;
+    }
+    .back {
+        /*        top: -65px;*/
+    }
+    .back h1 {
+        font: 107px/112px CaslonGraphiqueEF;
+    }
+    .learn span {
+        height: 60px;
+        line-height: 60px;
+        border-width: 2px;
+    }
+    .expertize p {
+        margin-bottom: 40px;
+        padding-top: 65px;
+    }
+    .expertize li {
+        font: 25px/64.65px LarsseitMedium;
+    }
+    .expertize li img {
+        width: 35px;
+        margin-right: 20px;
+    }
+    /**********************CASE**********************/
+    .slick-prev,
+    .slick-next {
+        width: 53px;
+        height: 25px;
+    }
+    .slick-prev {
+        right: 44px;
+        bottom: -66px;
+        background: url('../img/customers-left1680.png') no-repeat;
+    }
+    .slick-next {
+        right: 12px;
+        bottom: -91px;
+        background: url('../img/customers-right1680.png') no-repeat;
+    }
+    .case {
+        margin-bottom: 300px;
+    }
+    .case .sectionName {
+        top: 120px;
+    }
+    .case .learn {
+        left: 10px;
+        bottom: -90px;
+    }
+    .pagingInfoBlock {
+        right: 135px;
+        bottom: -90px;
+    }
+    .action {
+        padding-top: 350px;
+    }
+    footer {
+        height: 135px;
+        padding: 50px 65px;
+        /*        bottom: 20px;*/
+    }
+    .copyright p {
+        font: 18px/35px LarsseitMedium;
+    }
+    /**************************CASE******************/
+    .cases .back {
+        top: 0px;
+    }
+}

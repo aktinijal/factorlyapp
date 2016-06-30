@@ -1,0 +1,511 @@
+@font-face {
+    font-family: LarsseitBold;
+    src: url('fonts/LarsseitBold.otf');
+}
+
+@font-face {
+    font-family: LarsseitItalic;
+    src: url('fonts/LarsseitItalic.otf');
+}
+
+@font-face {
+    font-family: LarsseitMedium;
+    src: url('fonts/LarsseitMedium.otf');
+}
+
+@font-face {
+    font-family: LarsseitRegular;
+    src: url('fonts/LarsseitRegular.otf');
+}
+
+@font-face {
+    font-family: CaslonGraphiqueEF;
+    src: url('fonts/CaslonGraphiqueEF.ttf');
+}
+
+@font-face {
+    font-family: GTHaptikMedium;
+    src: url('fonts/GTHaptikMedium.otf');
+}
+
+
+/*************************************************/
+
+p {
+    color: #111111;
+    font: 36px/64px LarsseitMedium;
+}
+
+h2 {
+    margin-bottom: 50px;
+    color: #111111;
+    font: 72px/88px LarsseitMedium;
+}
+
+body {
+    height: 100%;
+/*    background-color: #fceee1;*/
+    background-color: #fff;
+}
+
+.home {
+/*    background: #f0f0f0 url(../img/background.png) no-repeat top center;*/
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    border: 20px solid #fff;
+}
+
+.header {
+    height: 220px;
+    padding: 80px 90px;
+}
+
+.logo img:last-child {
+    margin-left: 25px;
+    vertical-align: super;
+}
+
+.navigation li,
+.social li,
+.copyright p {
+    margin-right: 50px;
+    display: inline-block;
+    height: 64px;
+}
+
+.navigation li:last-child,
+.social li:last-child {
+    margin-right: 0;
+}
+
+.navigation a,
+.social a {
+    text-decoration: none;
+    color: #111111;
+    font: 32px/60px LarsseitMedium;
+}
+
+.navigation a:hover, .active{
+    background: url(../img/navactive.png) no-repeat center;
+}
+
+
+/***********************HERO***************/
+
+.hero {
+    padding-top: 140px;
+}
+
+h1.title {
+    margin-bottom: 70px;
+    color: #1f2124;
+    font: 96px/120px LarsseitMedium;
+}
+
+.hero p {
+    color: #1f2124;
+}
+
+.hero .iphone-img {
+    width: 100%;
+}
+
+button.request {
+    margin-top: 80px;
+    text-decoration: none;
+    width: 280px;
+    height: 120px;
+    background-color: #111111;
+    color: #ffffff;
+    font: 32px/56px LarsseitMedium;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.4);
+    -moz-box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.4);
+    box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.4);
+}
+
+.hero .arrowBottom {
+    margin: 250px auto 400px;
+    display: block;
+    width: 40px;
+}
+
+
+/*******************EXPERTIZE*********************/
+
+h4.sectionName {
+    width: 252px;
+    position: relative;
+    top: 270px;
+    left: 42px;
+    color: #fd3b3b;
+    font: 36px LarsseitMedium;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.sectionName img {
+    vertical-align: middle;
+    margin-right: 40px;
+}
+
+.expertize {
+    margin-bottom: 380px;
+}
+
+.back {
+    position: absolute;
+    width: 50%;
+    z-index: 0;
+}
+
+.back h1 {
+    color: #fff;
+    font: 172px/180px CaslonGraphiqueEF;
+}
+
+a.learn {
+    position: absolute;
+    bottom: 0;
+}
+
+.learn p {
+    margin-bottom: 0;
+}
+
+.learn span {
+    display: inline-block;
+    height: 90px;
+    line-height: 90px;
+    border-bottom: 5px solid #111;
+}
+
+.expertize p {
+    margin-bottom: 50px;
+}
+
+.expertize li {
+    color: #111111;
+    font: 40px/104px LarsseitMedium;
+}
+
+.expertize li img {
+    margin-right: 37px;
+    vertical-align: middle;
+}
+
+
+/**********************Cases**************************/
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    width: 80px;
+    height: 38px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.slick-prev {
+    right: 44px;
+    bottom: -108px;
+    background: url('../img/customers-left.png') no-repeat;
+}
+
+.slick-next {
+    right: 20px;
+    bottom: -148px;
+    background: url('../img/customers-right.png') no-repeat;
+}
+
+.case {
+    margin-bottom: 520px;
+}
+
+.case .sectionName {
+    top: 200px;
+}
+
+.case .learn {
+    position: absolute;
+    left: 20px;
+    bottom: -136px;
+}
+
+.pagingInfoBlock {
+    position: absolute;
+    right: 205px;
+    bottom: -136px;
+}
+
+/**********************Principle***********************/
+.principle-item:nth-child(4), .principle-item:last-child{
+    margin-top: 65px;
+}
+
+/********************Call to action*******************/
+.action button.request{
+    margin-bottom: 75px;
+}
+
+/**********************Footer***********************/
+footer {
+    height: 200px;
+    padding: 68px 90px;
+    bottom: 20px;
+}
+
+
+
+/***ABOUT***/
+.about{
+    background: #f0f0f0 url(../img/about/background.png) no-repeat top center;
+}
+
+
+.faces{
+    padding-top: 200px;
+}
+.faces h4.sectionName{
+    top: 200px;
+}
+.face{
+    z-index: 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 800px;
+    -webkit-box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.2);
+    -moz-box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.2);
+    box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.2);
+}
+.face img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.faces .text{
+    position: absolute;
+    left: 65px;
+    top: -35px;
+    z-index: 1;
+}
+.faces h3{
+    color: #111;
+    font: 56px/64px LarsseitMedium;
+}
+
+.faces .text h4{
+    margin-top: 10px;
+    color: #d2dfe8;
+    font: 35px/72px LarsseitMedium;
+}
+
+div.plus{
+    margin-top: 105px;
+    padding-top: 40px;
+    padding-left: 40px;
+    background: url(../img/about/plus.png) no-repeat; 
+}
+.plus p{
+    font: 56px/72px LarsseitMedium;
+}
+
+.why{
+    margin-bottom: 330px;
+    padding-top: 440px;
+}
+
+.ambiance h4.sectionName{
+    top: 170px;
+}
+.ambianceSmall img, .ambianceBig img{
+    width: 100%;
+}
+div.ambianceSmall:first-child, .ambianceSmall:nth-child(2), .third, .ambianceBig{
+    margin-bottom: 15px;
+}
+.third, .fourth, .fifth{
+    margin-top: 15px;
+}
+
+.ambiance .back{
+    width: auto;
+    bottom: 165px;
+}
+
+.learn span{
+    display: inline-block;
+    height: 90px;
+    border-bottom: 3px solid #111;
+}
+
+.instagram-back, .back img{
+    position: absolute;
+    bottom: 0;
+}
+
+.action{
+    padding-top: 600px;
+}
+
+/*******Case********/
+.cases{
+    background: #f0f0f0 url(../img/cases/background.png) no-repeat top center;
+}
+.cases .case{
+    margin-top: 90px;
+}
+
+.screens{
+    margin-bottom: 325px;
+}
+
+.projects-text{
+    margin-top: 125px;
+    margin-bottom: 335px;
+    font: 36px/64px LarsseitRegular;
+}
+
+.project-screen {
+    width: 27.66%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.project-screen:first-child {
+    margin-left: 0;
+}
+.project-screen:last-child {
+    margin-right: 60px;
+}
+.project-screen img{
+    width: 100%;
+}
+.basilic{
+    position: absolute;
+    top: -80px;
+    right: -140px;
+    z-index: -1;
+}
+.tomato{
+    position: absolute;
+    top: 175px;
+    right: -160px;
+    z-index: -1;
+}
+
+.google{
+    margin-bottom: 50px;
+}
+.back-buttons{
+    width: 12.75%;
+    position: absolute;
+    right: -75px;
+    bottom: 0;
+}
+
+.product-details ul li{
+    list-style: none;
+    font: 40px/84px LarsseitMedium;
+}
+.product-details p{
+    font-family: LarsseitRegular;
+}
+.quote {
+    position: relative;
+    margin-top: 120px;
+} 
+.quote img{
+    position: absolute;
+    top: -85px;
+    left: -200px;
+    z-index: -1;
+}
+.quote p{
+    font-family: LarsseitItalic;
+}
+h4.name{
+    margin-top: 82px;
+    font: 40px/48px LarsseitMedium;
+}
+h5.position{
+    font: 32px/48px LarsseitRegular;
+}
+
+.productPagingInfoBlock {
+    position: absolute;
+    right: 220px;
+    bottom: -120px;
+    color: #fd3b3b;
+}
+.productPagingInfoBlock p{
+    color: #fd3b3b;
+}
+
+.projects .slick-prev {
+    right: 20%;
+    bottom: -108px;
+    background: url('../img/cases/arrow-left.png') no-repeat;
+    background-size: 100%;
+}
+
+.projects .slick-next {
+    right: 18%;
+    bottom: -148px;
+    background: url('../img/cases/arrow-right.png') no-repeat;
+    background-size: 100%;
+}
+.cases footer{
+    text-align: center;
+    margin-top: 520px;
+}
+footer .request{
+    height: 80px;
+    margin: 0 auto;
+    font-size: 28px;
+}
+
+.cases .copyright p, .cases .social a {
+    height: 80px;
+    line-height: 80px;
+}
+
+
+/*******Contact********/
+.contact{
+    background: #d2dfe8 url(../img/contact/background.png) no-repeat top center;
+}
+
+.contacts{
+    margin-top: 200px;
+    margin-bottom: 245px;
+} 
+.contacts img{
+    margin-bottom: 90px;
+} 
+.contacts p{
+    margin-bottom: 45px;
+}
+.contacts .request{
+    margin-top: 45px;
+} 
+
+
+
+
+
+
+
