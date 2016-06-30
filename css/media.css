@@ -1,5 +1,7 @@
 @media (max-width: 1900px) {
+
     .tempor {
+/*        background-color: #f0f0f0;*/
         position: absolute;
         top: 0;
         width: 100%;
@@ -20,6 +22,15 @@
         height: 4034px;
         background: url(../img/background-topsecond1680.png) no-repeat bottom left;
     }
+/*
+    .third-triangle {
+        position: absolute;
+        top: 3384px;
+        width: 100%;
+        height: 1034px;
+        background: url(../img/background-bottom1680.png) no-repeat bottom left;
+    }
+*/
     .phone-wrapper{
         position: relative;
         top: 250px;
@@ -116,14 +127,13 @@
         font: 60px/75px LarsseitMedium;
     }
     h2 {
+        margin-top: 65px;
         margin-bottom: 30px;
         font: 45px/54.7px LarsseitMedium;
     }
     .home {
         opacity: 0;
-/*        display: none;*/
-/*        visibility: hidden;*/
-        /*        background: #f0f0f0 url(../img/background1680.png) no-repeat top center;*/
+/*                background: #f0f0f0 url(../img/background1680.png) no-repeat top center;*/
     }
     .header {
         height: 125px;
@@ -154,11 +164,11 @@
     }
     /**********************HERO**********************/
     .hero {
-        padding-top: 80px;
-        padding-bottom: 365px;
+        padding-top: 95px;
+        padding-bottom: 370px;
     }
     button.request {
-        margin-top: 50px;
+        margin-top: 40px;
         width: 175px;
         height: 75px;
         font: 20px/35px LarsseitMedium;
@@ -172,7 +182,7 @@
     /**********************EXPERTIZE**********************/
     h4.sectionName {
         width: 157px;
-        top: 170px;
+        top: 200px;
         font-size: 23px;
     }
     .sectionName img {
@@ -195,7 +205,6 @@
     }
     .expertize p {
         margin-bottom: 40px;
-        padding-top: 65px;
     }
     .expertize li {
         font: 25px/64.65px LarsseitMedium;
@@ -224,7 +233,7 @@
         margin-bottom: 300px;
     }
     .case .sectionName {
-        top: 120px;
+        top: 150px;
     }
     .case .learn {
         left: 10px;
@@ -235,9 +244,11 @@
         bottom: -90px;
     }
     .action {
-        padding-top: 350px;
+/*        background-color: #f0f0f0;*/
+        margin-top: 350px;
     }
     footer {
+/*        background-color: #f0f0f0;*/
         height: 135px;
         padding: 50px 65px;
         /*        bottom: 20px;*/

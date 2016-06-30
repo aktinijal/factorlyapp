@@ -16,9 +16,9 @@ $(document).ready(function () {
                 $('.watch3').animate({top : 350}, 1100, function() {
                     $('.arrow').animate({top : 1000}, 800, function() {
                         $('.arrow').animate({top : 950}, 300, function() {
-                            $('.arrow').animate({top : 1000}, 300, function() {
-                                $('.arrow').animate({top : 975}, 150, function() {
-                                    $('.arrow').animate({top : 1000}, 150, function(){
+                            $('.arrow').animate({top : 940}, 300, function() {
+                                $('.arrow').animate({top : 915}, 150, function() {
+                                    $('.arrow').animate({top : 940}, 150, function(){
                                         
 
                                     $('.home').animate({opacity : 1}, 700);

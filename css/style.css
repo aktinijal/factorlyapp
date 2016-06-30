@@ -31,6 +31,16 @@
 
 /*************************************************/
 
+.row-custom {
+    width: 71.78%;
+    margin: 0 auto;
+}
+
+.sectionoffset {
+    width: 7.5%;
+    margin-left: 7.5%;
+}
+
 p {
     color: #111111;
     font: 36px/64px LarsseitMedium;
@@ -44,12 +54,12 @@ h2 {
 
 body {
     height: 100%;
-/*    background-color: #fceee1;*/
+    /*    background-color: #fceee1;*/
     background-color: #fff;
 }
 
 .home {
-/*    background: #f0f0f0 url(../img/background.png) no-repeat top center;*/
+    /*    background: #f0f0f0 url(../img/background.png) no-repeat top center;*/
 }
 
 .wrapper {
@@ -93,7 +103,8 @@ body {
     font: 32px/60px LarsseitMedium;
 }
 
-.navigation a:hover, .active{
+.navigation a:hover,
+.active {
     background: url(../img/navactive.png) no-repeat center;
 }
 
@@ -165,7 +176,7 @@ h4.sectionName {
 
 .back {
     position: absolute;
-    width: 50%;
+    width: 60%;
     z-index: 0;
 }
 
@@ -194,6 +205,10 @@ a.learn {
     margin-bottom: 50px;
 }
 
+.expertize .learn p {
+    margin-bottom: 0;
+}
+
 .expertize li {
     color: #111111;
     font: 40px/104px LarsseitMedium;
@@ -206,6 +221,10 @@ a.learn {
 
 
 /**********************Cases**************************/
+
+.case-wrapper {
+    position: relative;
+}
 
 .slick-prev,
 .slick-next {
@@ -250,17 +269,19 @@ a.learn {
     bottom: -136px;
 }
 
+
 /**********************Principle***********************/
-.principle-item:nth-child(4), .principle-item:last-child{
-    margin-top: 65px;
-}
+
 
 /********************Call to action*******************/
-.action button.request{
+
+.action button.request {
     margin-bottom: 75px;
 }
 
+
 /**********************Footer***********************/
+
 footer {
     height: 200px;
     padding: 68px 90px;
@@ -268,20 +289,21 @@ footer {
 }
 
 
-
 /***ABOUT***/
-.about{
+
+.about {
     background: #f0f0f0 url(../img/about/background.png) no-repeat top center;
 }
 
-
-.faces{
+.faces {
     padding-top: 200px;
 }
-.faces h4.sectionName{
+
+.faces h4.sectionName {
     top: 200px;
 }
-.face{
+
+.face {
     z-index: 0;
     position: relative;
     background-color: #ffffff;
@@ -290,90 +312,107 @@ footer {
     -moz-box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.2);
     box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.2);
 }
-.face img{
+
+.face img {
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
 }
-.faces .text{
+
+.faces .text {
     position: absolute;
     left: 65px;
     top: -35px;
     z-index: 1;
 }
-.faces h3{
+
+.faces h3 {
     color: #111;
     font: 56px/64px LarsseitMedium;
 }
 
-.faces .text h4{
+.faces .text h4 {
     margin-top: 10px;
     color: #d2dfe8;
     font: 35px/72px LarsseitMedium;
 }
 
-div.plus{
+div.plus {
     margin-top: 105px;
     padding-top: 40px;
     padding-left: 40px;
-    background: url(../img/about/plus.png) no-repeat; 
+    background: url(../img/about/plus.png) no-repeat;
 }
-.plus p{
+
+.plus p {
     font: 56px/72px LarsseitMedium;
 }
 
-.why{
+.why {
     margin-bottom: 330px;
     padding-top: 440px;
 }
 
-.ambiance h4.sectionName{
+.ambiance h4.sectionName {
     top: 170px;
 }
-.ambianceSmall img, .ambianceBig img{
+
+.ambianceSmall img,
+.ambianceBig img {
     width: 100%;
 }
-div.ambianceSmall:first-child, .ambianceSmall:nth-child(2), .third, .ambianceBig{
+
+div.ambianceSmall:first-child,
+.ambianceSmall:nth-child(2),
+.third,
+.ambianceBig {
     margin-bottom: 15px;
 }
-.third, .fourth, .fifth{
+
+.third,
+.fourth,
+.fifth {
     margin-top: 15px;
 }
 
-.ambiance .back{
+.ambiance .back {
     width: auto;
     bottom: 165px;
 }
 
-.learn span{
+.learn span {
     display: inline-block;
     height: 90px;
     border-bottom: 3px solid #111;
 }
 
-.instagram-back, .back img{
+.instagram-back,
+.back img {
     position: absolute;
     bottom: 0;
 }
 
-.action{
-    padding-top: 600px;
+.action {
+    margin-top: 600px;
 }
 
+
 /*******Case********/
-.cases{
+
+.cases {
     background: #f0f0f0 url(../img/cases/background.png) no-repeat top center;
 }
-.cases .case{
+
+.cases .case {
     margin-top: 90px;
 }
 
-.screens{
+.screens {
     margin-bottom: 325px;
 }
 
-.projects-text{
+.projects-text {
     margin-top: 125px;
     margin-bottom: 335px;
     font: 36px/64px LarsseitRegular;
@@ -385,63 +424,75 @@ div.ambianceSmall:first-child, .ambianceSmall:nth-child(2), .third, .ambianceBig
     margin-left: 20px;
     margin-right: 20px;
 }
+
 .project-screen:first-child {
     margin-left: 0;
 }
+
 .project-screen:last-child {
     margin-right: 60px;
 }
-.project-screen img{
+
+.project-screen img {
     width: 100%;
 }
-.basilic{
+
+.basilic {
     position: absolute;
     top: -80px;
     right: -140px;
     z-index: -1;
 }
-.tomato{
+
+.tomato {
     position: absolute;
     top: 175px;
     right: -160px;
     z-index: -1;
 }
 
-.google{
+.google {
     margin-bottom: 50px;
 }
-.back-buttons{
+
+.back-buttons {
     width: 12.75%;
     position: absolute;
     right: -75px;
     bottom: 0;
 }
 
-.product-details ul li{
+.product-details ul li {
     list-style: none;
     font: 40px/84px LarsseitMedium;
 }
-.product-details p{
+
+.product-details p {
     font-family: LarsseitRegular;
 }
+
 .quote {
     position: relative;
     margin-top: 120px;
-} 
-.quote img{
+}
+
+.quote img {
     position: absolute;
     top: -85px;
     left: -200px;
     z-index: -1;
 }
-.quote p{
+
+.quote p {
     font-family: LarsseitItalic;
 }
-h4.name{
+
+h4.name {
     margin-top: 82px;
     font: 40px/48px LarsseitMedium;
 }
-h5.position{
+
+h5.position {
     font: 32px/48px LarsseitRegular;
 }
 
@@ -451,7 +502,8 @@ h5.position{
     bottom: -120px;
     color: #fd3b3b;
 }
-.productPagingInfoBlock p{
+
+.productPagingInfoBlock p {
     color: #fd3b3b;
 }
 
@@ -468,44 +520,44 @@ h5.position{
     background: url('../img/cases/arrow-right.png') no-repeat;
     background-size: 100%;
 }
-.cases footer{
+
+.cases footer {
     text-align: center;
     margin-top: 520px;
 }
-footer .request{
+
+footer .request {
     height: 80px;
     margin: 0 auto;
     font-size: 28px;
 }
 
-.cases .copyright p, .cases .social a {
+.cases .copyright p,
+.cases .social a {
     height: 80px;
     line-height: 80px;
 }
 
 
 /*******Contact********/
-.contact{
+
+.contact {
     background: #d2dfe8 url(../img/contact/background.png) no-repeat top center;
 }
 
-.contacts{
+.contacts {
     margin-top: 200px;
     margin-bottom: 245px;
-} 
-.contacts img{
+}
+
+.contacts img {
     margin-bottom: 90px;
-} 
-.contacts p{
+}
+
+.contacts p {
     margin-bottom: 45px;
 }
-.contacts .request{
+
+.contacts .request {
     margin-top: 45px;
-} 
-
-
-
-
-
-
-
+}
