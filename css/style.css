@@ -28,49 +28,56 @@
     src: url('fonts/GTHaptikMedium.otf');
 }
 
+
 /***************************BACKGROUND*****************/
+
 .tempor {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 4892px;
-        z-index: -1;
-    }
-    .first-triangle {
-        position: absolute;
-        top: -2500px;
-        width: 100%;
-        height: 1871px;
-        background: url(../img/background-topfirst2880.png) no-repeat top left;
-    }
-    .second-triangle {
-        position: absolute;
-        top: 2500px;
-        width: 100%;
-        height: 6915px;
-        background: url(../img/background-topsecond2880.png) no-repeat bottom left;
-    }
-        .footer-bg {
-        position: absolute;
-        bottom: 0;
-        height: 1744px;
-        width: 100%;
-        background: url(../img/footer2880.1.png) no-repeat;
-        background-color: #cfdee8;
-        z-index: -2;
-        zoom: 1;
-    }
-    .footer-bg2 {
-        position: absolute;
-        bottom: 0;
-        height: 1744px;
-        width: 100%;
-        background: url(../img/footer2880.2.png) no-repeat;
-        background-color: #cfdee8;
-        z-index: -1;
-        zoom: 1;
-        opacity: 0;
-    }
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4892px;
+    z-index: -1;
+}
+
+.first-triangle {
+    position: absolute;
+    top: -2500px;
+    width: 100%;
+    height: 1871px;
+    background: url(../img/background-topfirst2880.png) no-repeat top left;
+}
+
+.second-triangle {
+    position: absolute;
+    top: 2500px;
+    width: 100%;
+    height: 6915px;
+    background: url(../img/background-topsecond2880.png) no-repeat bottom left;
+}
+
+.footer-bg {
+    position: absolute;
+    bottom: 0;
+    height: 1744px;
+    width: 100%;
+    background: url(../img/footer2880.1.png) no-repeat;
+    background-color: #cfdee8;
+    z-index: -2;
+    zoom: 1;
+}
+
+.footer-bg2 {
+    position: absolute;
+    bottom: 0;
+    height: 1744px;
+    width: 100%;
+    background: url(../img/footer2880.2.png) no-repeat;
+    background-color: #cfdee8;
+    z-index: -1;
+    zoom: 1;
+    opacity: 0;
+}
+
 
 /*************************MODAL*************************/
 
@@ -103,6 +110,7 @@
 #modal_form p {
     margin-top: 40px;
 }
+
 #modal_form p:first-child {
     margin-top: 0;
 }
@@ -168,54 +176,63 @@
 
 
 /*******************Phone***************************/
-.phone-wrapper {
-        position: relative;
-        top: 250px;
-        right: 200px;
-        /*        width: 498px;*/
-        height: 427px;
-    }
-    .phone {
-        position: absolute;
-        right: 0;
-        top: -1000px;
-    }
-    .phone-shadow,
-    .phone-shadow2,
-    .phone-shadow3,
-    .phone-shadow4 {
-        position: absolute;
-        right: 45px;
-        top: -1050px;
-    }
-    .watch {
-        position: absolute;
-        right: 150px;
-        top: -700px;
-    }
-    .watch2 {
-        position: absolute;
-        right: 355px;
-        top: -775px;
-    }
-    .watch3 {
-        position: absolute;
-        right: 375px;
-        top: -790px;
-    }
-    .arrow {
-        position: absolute;
-        right: 49%;
-        top: -100px;
-    }
 
-    .wrapper {
-        position: absolute;
-        top: 0;
-        z-index: 0;
-    }
+.phone-wrapper {
+    position: relative;
+    top: 450px;
+    right: 10%;
+    /*        width: 498px;*/
+    height: 427px;
+}
+
+.phone {
+    position: absolute;
+    right: 0;
+    top: -1000px;
+}
+
+.phone-shadow,
+.phone-shadow2,
+.phone-shadow3,
+.phone-shadow4 {
+    position: absolute;
+    right: 45px;
+    top: -1050px;
+}
+
+.watch {
+    position: absolute;
+    right: 150px;
+    top: -700px;
+}
+
+.watch2 {
+    position: absolute;
+    right: 355px;
+    top: -775px;
+}
+
+.watch3 {
+    position: absolute;
+    right: 375px;
+    top: -790px;
+}
+
+.arrow {
+    position: absolute;
+    right: 49%;
+    top: -100px;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
 
 /***************************************/
+
 .row-custom {
     width: 71.78%;
     margin: 0 auto;
@@ -239,13 +256,11 @@ h2 {
 
 body {
     height: 100%;
-    /*    background-color: #fceee1;*/
     background-color: #fff;
 }
 
 .home {
-        opacity: 0;
-    /*    background: #f0f0f0 url(../img/background.png) no-repeat top center;*/
+    opacity: 0;
 }
 
 .wrapper {
@@ -490,6 +505,7 @@ footer {
 .faces h4.sectionName {
     top: 200px;
 }
+
 .zoom-face p {
     opacity: 0;
     margin-top: 100px;

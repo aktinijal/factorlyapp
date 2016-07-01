@@ -41,19 +41,11 @@
         zoom: 1;
         opacity: 0;
     }
-    /*
-    .third-triangle {
-        position: absolute;
-        top: 3384px;
-        width: 100%;
-        height: 1034px;
-        background: url(../img/background-bottom1680.png) no-repeat bottom left;
-    }
-*/
+
     .phone-wrapper {
         position: relative;
         top: 250px;
-        right: 200px;
+        right: 10%;
         /*        width: 498px;*/
         height: 427px;
     }
@@ -184,7 +176,7 @@
         margin-bottom: 40px;
     }
     .expertize li {
-        font: 25px/64.65px LarsseitMedium;
+        font: 21px/64.65px LarsseitMedium;
     }
     .expertize li img {
         width: 35px;

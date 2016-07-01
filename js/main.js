@@ -130,26 +130,6 @@ $(document).ready(function () {
     });
     
 
-        $('.zoom-face').hover(function(){
-            $(this).find('.text > p').animate({
-                opacity : '1'
-            }, 300);
-            $(this).find('.face > img').animate({
-                width : '105%',
-                left: '-2.5%'
-                
-            }, 300);
-        });
-        $('.zoom-face').mouseleave(function(){
-            $(this).find('.text > p').animate({
-                opacity : '0'
-            }, 300);
-            $(this).find('.face > img').animate({
-                width : '100%',
-//                left: -0
-                
-            }, 100);
-        });
     
     
     
@@ -219,9 +199,41 @@ $('.cases-slick > button').addClass('littleSlick');
 
     
     /***********************ABOUT.html******************/
-//    $('.faces-item').click(function(){
-//        $('.face').css('zoom', '3');
-//    });
 
+        $('.zoom-face').hover(function(){
+            $(this).find('.text > p').animate({
+                opacity : '1'
+            }, 300);
+            $(this).find('.face > img').animate({
+                width : '105%',
+                left: '-2.5%'
+                
+            }, 300);
+        });
+        $('.zoom-face').mouseleave(function(){
+            $(this).find('.text > p').animate({
+                opacity : '0'
+            }, 300);
+            $(this).find('.face > img').animate({
+                width : '100%',
+//                left: -0
+                
+            }, 100);
+        });
+    
+//    $('.zoom-photo').hover(function(){
+//            $(this).find('img').animate({
+//                width : '105%',
+//                left: '-2.5%'
+//                
+//            }, 300);
+//        });
+//        $('.zoom-photo').mouseleave(function(){
+//            $(this).find('img').animate({
+//                width : '100%',
+//                left: '0'
+//                
+//            }, 300);
+//        });
 
 });
