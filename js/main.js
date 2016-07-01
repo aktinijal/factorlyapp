@@ -1,30 +1,71 @@
 $(document).ready(function () {
-        $('.first-triangle').animate({top : 0}, 800);
+    $('.first-triangle').animate({
+        top: 0
+    }, 800);
 
-        $('.second-triangle').animate({top : 250}, 800, function(){
-            $('.phone').animate({top : 60}, 600);
-            $('.phone-shadow4').animate({top : 85}, 650);
-            $('.phone-shadow').animate({top : 60}, 700);
-            $('.phone-shadow2').animate({top : 30}, 800);
-            $('.phone-shadow3').animate({top : 0}, 900);
-            $('.first-triangle').animate({top : -10}, 250);
-            $('.second-triangle').animate({top : 260}, 250, function(){
-                $('.first-triangle').animate({top : 0}, 150);
-                $('.second-triangle').animate({top : 220}, 150);
-                $('.watch').animate({top : 280}, 900);
-                $('.watch2').animate({top : 335}, 1000);
-                $('.watch3').animate({top : 350}, 1100, function() {
-                    $('.arrow').animate({top : 1000}, 800, function() {
-                        $('.arrow').animate({top : 950}, 300, function() {
-                            $('.arrow').animate({top : 940}, 300, function() {
-                                $('.arrow').animate({top : 915}, 150, function() {
-                                    $('.arrow').animate({top : 940}, 150, function(){
-                                        
+    $('.second-triangle').animate({
+        top: 250
+    }, 800, function () {
+        //            $('body').css('background-color', '#cfdee8');
+        $('.phone').animate({
+            top: 60
+        }, 600);
+        $('.phone-shadow4').animate({
+            top: 85
+        }, 650);
+        $('.phone-shadow').animate({
+            top: 60
+        }, 700);
+        $('.phone-shadow2').animate({
+            top: 30
+        }, 800);
+        $('.phone-shadow3').animate({
+            top: 0
+        }, 900);
+        $('.first-triangle').animate({
+            top: -10
+        }, 250);
+        $('.second-triangle').animate({
+            top: 260
+        }, 250, function () {
+            $('.first-triangle').animate({
+                top: 0
+            }, 150);
+            $('.second-triangle').animate({
+                top: 220
+            }, 150);
+            $('.watch').animate({
+                top: 280
+            }, 900);
+            $('.watch2').animate({
+                top: 335
+            }, 1000);
+            $('.watch3').animate({
+                top: 350
+            }, 1100, function () {
+                $('.arrow').animate({
+                    top: 940
+                }, 800, function () {
+                    $('.home').animate({
+                        opacity: 1
+                    }, 600);
+                    $('.arrow').animate({
+                        top: 900
+                    }, 300, function () {
+                        $('.arrow').animate({
+                            top: 940
+                        }, 300, function () {
+                            $('.arrow').animate({
+                                top: 920
+                            }, 150, function () {
+                                $('.arrow').animate({
+                                    top: 940
+                                }, 150, function () {
 
-                                    $('.home').animate({opacity : 1}, 700);
-                                            
-                                        //                                    $('.home').css({visibility:'visible'});
-                                    });
+
+
+
+                                    //                                    $('.home').css({visibility:'visible'});
                                 });
                             });
                         });
@@ -32,51 +73,120 @@ $(document).ready(function () {
                 });
             });
         });
+    });
+/****************************************************/
+    var x = false;
+    some = function() {
+        $('.request').css({'background-color': '#fff'});
+        $('.request').css({'color': '#111'});
+        $('.request').css({'box-shadow': 'none'});
+        $('.footer-bg2').animate({opacity: 1}, 700, function() {
+            $('.request').css({'background-color': '#111'});
+            $('.request').css({'color': '#fff'});
+            $('.request').css({'box-shadow': '0px 30px 60px 0px rgba(17, 17, 17, 0.4)'});
+            $('.footer-bg2').animate({opacity: 0}, 50, function() {
+                $('.request').css({'background-color': '#fff'});
+                $('.request').css({'color': '#111'});
+                $('.request').css({'box-shadow': 'none'});
+                $('.footer-bg2').animate({opacity: 1}, 300, function() {
+                    $('.request').css({'background-color': '#111'});
+                    $('.request').css({'color': '#fff'});
+                    $('.request').css({'box-shadow': '0px 30px 60px 0px rgba(17, 17, 17, 0.4)'});
+                    $('.footer-bg2').animate({opacity: 0}, 30, function() {
+                        $('.request').css({'background-color': '#fff'});
+                        $('.request').css({'color': '#111'});
+                        $('.request').css({'box-shadow': 'none'});
+                        $('.footer-bg2').animate({opacity: 1}, 100, function() {
+                            $('.request').css({'background-color': '#111'});
+                            $('.request').css({'color': '#fff'});
+                            $('.request').css({'box-shadow': '0px 30px 60px 0px rgba(17, 17, 17, 0.4)'});
+                            $('.footer-bg2').animate({opacity: 0}, 20, function() {
+                                $('.request').css({'background-color': '#fff'});
+                                $('.request').css({'color': '#111'});
+                                $('.request').css({'box-shadow': 'none'});
+                                $('.footer-bg2').animate({opacity: 1}, 10);
+                            });
+                        });
+                    });
+                });
+            });
+        });
+        
+    }
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        var scrollBottom = $(window).scrollTop() - $('.home').height();
+        if(scrollBottom >= -1000 && x == false) {
+           some();
+            x = true;
+        }
+        if(scrollBottom <= -1500) {
+            x = false;
+            $('.footer-bg2').animate({opacity: 0}, 10)
+            $('.request').css({'background-color': '#111'});
+            $('.request').css({'color': '#fff'});
+            $('.request').css({'box-shadow': '0px 30px 60px 0px rgba(17, 17, 17, 0.4)'});
+        }
+    });
+    
 
+        $('.zoom-face').hover(function(){
+            $(this).find('.text > p').animate({
+                opacity : '1'
+            }, 300);
+            $(this).find('.face > img').animate({
+                width : '105%',
+                left: '-2.5%'
+                
+            }, 300);
+        });
+        $('.zoom-face').mouseleave(function(){
+            $(this).find('.text > p').animate({
+                opacity : '0'
+            }, 300);
+            $(this).find('.face > img').animate({
+                width : '100%',
+//                left: -0
+                
+            }, 100);
+        });
+    
+    
+    
+    
+    
+
+/********************Modal***************************/
+    $('.request').click(function () {
+        $('#overlay').fadeIn(400,
+            function () {
+                $('#modal_form')
+                    .css('display', 'block')
+                    .animate({
+                        opacity: 1
+                    }, 200);
+            });
+    });
+
+    $('#modal_close, #overlay').click(function () {
+        $('#modal_form')
+            .animate({
+                    opacity: 0
+                }, 200,
+                function () {
+                    $(this).css('display', 'none');
+                    $('#overlay').fadeOut(400);
+                }
+            );
+    });
 
     /******************Background***********************/
     $(window).resize(function () {
 
     });
-//    var width = $(window).width();
-//
-//    $('.triangle-top').css("borderLeftWidth", width);
-//    $('.triangle-bottom').css("borderRightWidth", width);
-//    $('.triangle-footer').css("borderLeftWidth", width);
-//    $('footer').width($(".wrapper").width() - 180);
-//
-//    $(window).resize(function () {
-//        var width = $(window).width();
-//        $('.triangle-top').css("borderLeftWidth", width);
-//        $('.triangle-bottom').css("borderRightWidth", width);
-//        $('.triangle-footer').css("borderLeftWidth", width);
-//        $('footer').width($(".wrapper").width() - 180);
-//    });
-//        
-//    var heroHeight = $(".hero").height();
-//    var expertizeHeight = $(".expertize").height();
-//    var caseHeight = $(".case").height();
-//    var principleHeight = $(".principle").height();
-//    var rectangleHeight = expertizeHeight+caseHeight+principleHeight;
-//    $(".rectangle").height(rectangleHeight);
-//    
-//    $(window).resize(function(){
-//        var heroHeight = $(".hero").height();
-//        var expertizeHeight = $(".expertize").height();
-//        var caseHeight = $(".case").height();
-//        var principleHeight = $(".principle").height();
-//        var rectangleHeight = expertizeHeight+caseHeight+principleHeight;
-//        $(".rectangle").height(rectangleHeight);
-//        
-//        $('.wrapper').height($(".background").height());
-//    });
-//   
-//    $('.wrapper').height($(".background").height());
 
-
-
-    /*******************Expertize**********************/   
-var expertizeItemHeight = $(".app").height();
+    /*******************Expertize**********************/
+    var expertizeItemHeight = $(".app").height();
     $(".learn-div").height(expertizeItemHeight);
     $(".idea").height(expertizeItemHeight);
     $(window).resize(function () {
@@ -96,7 +206,7 @@ var expertizeItemHeight = $(".app").height();
 
     $slickElement.slick({});
 
-
+$('.cases-slick > button').addClass('littleSlick');
     var $statusProduct = $('.productPagingInfo');
     var $slickProduct = $('.products-slick');
 
@@ -107,6 +217,11 @@ var expertizeItemHeight = $(".app").height();
 
     $slickProduct.slick({});
 
+    
+    /***********************ABOUT.html******************/
+//    $('.faces-item').click(function(){
+//        $('.face').css('zoom', '3');
+//    });
 
 
 });

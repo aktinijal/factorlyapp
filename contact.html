@@ -17,7 +17,7 @@
     <link type="text/css" href="css/media.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
 
-    <script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>    
+    <script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script defer type="text/javascript" src="js/jquery.min.js"></script>
     <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="slick/slick/slick.min.js"></script>
@@ -85,6 +85,47 @@
     </div>
     <!--end of .contact .wrapper-->
 
+
+
+    <div id="modal_form">
+        <span id="modal_close"></span>
+        <form id="modal">
+            <p>
+                My name is
+                <input type="text" name="firstname" value="Michael Cohen"> and you can
+                <br> reach me at
+                <input type="tel" name="design" value="design"> or
+                <input type="text" name="phone" value="phone number">.
+            </p>
+
+            <p>
+                I`m looking for a partner for
+                <select name="discipline" form="modal">
+                    <option value="discipline">discipline</option>
+                    <option value=".">.</option>
+                    <option value="..">..</option>
+                    <option value="...">...</option>
+                </select>
+                with a goal to
+                <br> complete that near
+                <input type="text" name="date" value="date or timeframe"> and want to
+                <br> stay around a budget of
+                <select name="amount" form="modal">
+                    <option value="rough amount">rough amount</option>
+                    <option value=".">.</option>
+                    <option value="..">..</option>
+                    <option value="...">...</option>
+                </select>.
+            </p>
+            <p>
+                My message is
+                <input type="text" name="message" value="message here">.
+            </p>
+
+            <submit>Send</submit>
+        </form>
+    </div>
+    <div id="overlay"></div>
 </body>
 
 </html>

@@ -1,28 +1,47 @@
 @media (max-width: 1900px) {
-
     .tempor {
-/*        background-color: #f0f0f0;*/
         position: absolute;
         top: 0;
         width: 100%;
-        height: 4284px;
+        height: 4892px;
         z-index: -1;
     }
     .first-triangle {
         position: absolute;
         top: -1500px;
         width: 100%;
-        height: 1051px;
-        background: url(../img/background-topfirst1680.png) no-repeat top left
+        height: 1234px;
+        background: url(../img/background-topfirst1900.png) no-repeat top left;
     }
     .second-triangle {
         position: absolute;
         top: 1500px;
         width: 100%;
-        height: 4034px;
-        background: url(../img/background-topsecond1680.png) no-repeat bottom left;
+        height: 4642px;
+        background: url(../img/background-topsecond1900.png) no-repeat bottom left;
     }
-/*
+    .footer-bg {
+        position: absolute;
+        bottom: 0;
+        height: 1085px;
+        width: 100%;
+        background: url(../img/footer1900.1.png) no-repeat;
+        background-color: #cfdee8;
+        z-index: -2;
+        zoom: 1;
+    }
+    .footer-bg2 {
+        position: absolute;
+        bottom: 0;
+        height: 1085px;
+        width: 100%;
+        background: url(../img/footer1900.2.png) no-repeat;
+        background-color: #cfdee8;
+        z-index: -1;
+        zoom: 1;
+        opacity: 0;
+    }
+    /*
     .third-triangle {
         position: absolute;
         top: 3384px;
@@ -31,11 +50,11 @@
         background: url(../img/background-bottom1680.png) no-repeat bottom left;
     }
 */
-    .phone-wrapper{
+    .phone-wrapper {
         position: relative;
         top: 250px;
         right: 200px;
-/*        width: 498px;*/
+        /*        width: 498px;*/
         height: 427px;
     }
     .phone {
@@ -56,7 +75,7 @@
         right: 150px;
         top: -700px;
     }
-    .watch2{
+    .watch2 {
         position: absolute;
         right: 355px;
         top: -775px;
@@ -71,49 +90,6 @@
         right: 49%;
         top: -100px;
     }
-    
-    /*
-    .triangle-top {
-        margin-top: 250px;
-        width: 0;
-        height: 0;
-        border-bottom: 900px solid #cfdee8;
-        border-left: 500px solid transparent;
-        border-right: 0 solid transparent;
-        z-index: 0;
-    }
-    .rectangle {
-        padding-top: 80px;
-        width: 100%;
-        height: 5100px;
-        background-color: #cfdee8;
-        z-index: 0;
-    }
-    .triangle-bottom {
-        margin: 0 auto;
-        width: 0;
-        height: 0;
-        border-top: 900px solid #cfdee8;
-        border-left: 0 solid transparent;
-        border-right: 500px solid transparent;
-        z-index: 0;
-    }
-    .triangle-footer {
-        margin-top: -1200px;
-        width: 0;
-        height: 0;
-        border-bottom: 900px solid #f0f0f0;
-        border-left: 500px solid transparent;
-        border-right: 0 solid transparent;
-        z-index: 0;
-    }
-    .rectangle-footer {
-        width: 100%;
-        height: 333px;
-        background-color: #f0f0f0;
-        z-index: 0;
-    }
-*/
     .wrapper {
         position: absolute;
         top: 0;
@@ -133,9 +109,10 @@
     }
     .home {
         opacity: 0;
-/*                background: #f0f0f0 url(../img/background1680.png) no-repeat top center;*/
+        /*                background: #f0f0f0 url(../img/background1680.png) no-repeat top center;*/
     }
     .header {
+        /*        opacity: 0;*/
         height: 125px;
         padding: 45px 65px;
     }
@@ -164,6 +141,7 @@
     }
     /**********************HERO**********************/
     .hero {
+        /*        opacity: 0;*/
         padding-top: 95px;
         padding-bottom: 370px;
     }
@@ -173,7 +151,7 @@
         height: 75px;
         font: 20px/35px LarsseitMedium;
     }
-/*
+    /*
     .hero .arrowBottom {
         margin: 125px auto 200px;
         width: 40px;
@@ -244,20 +222,121 @@
         bottom: -90px;
     }
     .action {
-/*        background-color: #f0f0f0;*/
+        /*        background-color: #f0f0f0;*/
         margin-top: 350px;
     }
-    footer {
-/*        background-color: #f0f0f0;*/
-        height: 135px;
+    .cases footer {
+        /*        background-color: #f0f0f0;*/
+        height: 180px;
         padding: 50px 65px;
-        /*        bottom: 20px;*/
+    }
+    footer {
+        height: 135px;
+    }
+    footer .request {
+        margin-top: 0;
     }
     .copyright p {
         font: 18px/35px LarsseitMedium;
     }
+    
     /**************************CASE******************/
     .cases .back {
         top: 0px;
+    }
+    .screens {
+        margin-bottom: 125px;
+    }
+    .projects-text {
+        margin-top: 65px;
+        margin-bottom: 135px;
+        font: 23px/40px LarsseitRegular;
+    }
+    .product-details ul li {
+        font: 28px/64px LarsseitMedium;
+    }
+    .cases footer {
+        margin-top: 320px;
+    }
+    /**************************ABOUT******************/
+    .faces h4.sectionName {
+        top: 120px;
+    }
+    .faces .text {
+        top: -20px;
+    }
+    .face {
+        height: 500px;
+    }
+    .zoom-face p {
+        margin-top: 100px;
+        font: 20px/40px LarsseitMedium;
+    }
+    .faces h3 {
+        font: 35px/40px LarsseitMedium;
+    }
+    .faces .text h4 {
+        margin-top: 10px;
+        font: 24px/58px LarsseitMedium;
+    }
+    div.plus {
+        margin-top: 85px;
+        padding-left: 50px;
+        background-size: 25%;
+    }
+    .plus p {
+        font: 35px/50px LarsseitMedium;
+    }
+    .why {
+        margin-bottom: 230px;
+        padding-top: 200px;
+    }
+    .ambiance h4.sectionName {
+        width: 160px;
+    }
+}
+
+@media (max-width: 1680px) {
+    .tempor {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 4892px;
+        z-index: -1;
+    }
+    .first-triangle {
+        position: absolute;
+        top: -1500px;
+        width: 100%;
+        height: 1051px;
+        background: url(../img/background-topfirst1680.png) no-repeat top left;
+    }
+    .second-triangle {
+        position: absolute;
+        top: 1500px;
+        width: 100%;
+        height: 4642px;
+        background: url(../img/background-topsecond16802.png) no-repeat bottom left;
+    }
+    .footer-bg {
+        position: absolute;
+        bottom: 0;
+        height: 1085px;
+        width: 100%;
+        background: url(../img/footer1.png) no-repeat;
+        background-color: #cfdee8;
+        z-index: -2;
+        zoom: 1;
+    }
+    .footer-bg2 {
+        position: absolute;
+        bottom: 0;
+        height: 1085px;
+        width: 100%;
+        background: url(../img/footer2.png) no-repeat;
+        background-color: #cfdee8;
+        z-index: -1;
+        zoom: 1;
+        opacity: 0;
     }
 }

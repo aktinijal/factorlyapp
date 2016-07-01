@@ -51,50 +51,55 @@
                 <div class="col-lg-1 col-lg-offset-1">
                     <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Faces</h4>
                 </div>
-                <div class="col-lg-2">
+                <div class="zoom-face col-lg-2">
                     <div class="text">
                         <h3>Lucian <br> Cocan</h3>
                         <h4>CEO</h4>
+                        <p>Lorem ipsum</p>
                     </div>
                     <div class="face">
                         <img src="img/about/face1.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-2">
-                   <div class="text">
+                <div class="zoom-face col-lg-2">
+                    <div class="text">
                         <h3>Laurentiu<br>  
 Onac</h3>
                         <h4>CTO</h4>
+                        <p>Lorem ipsum</p>
                     </div>
                     <div class="face">
                         <img src="img/about/face2.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-2">
-                   <div class="text">
+                <div class="zoom-face col-lg-2">
+                    <div class="text">
                         <h3>Alex <br> Tudose</h3>
                         <h4>CTO</h4>
+                        <p>Lorem ipsum</p>
                     </div>
                     <div class="face">
                         <img src="img/about/face3.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-2">
-                   <div class="text">
+                <div class="zoom-face col-lg-2">
+                    <div class="text">
                         <h3>Michael <br> Cohen</h3>
                         <h4>COO</h4>
+                        <p>Lorem ipsum</p>
                     </div>
                     <div class="face">
                         <img src="img/about/face4.png" alt="">
                     </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="plus col-lg-3 col-lg-offset-2">
-                        <p>Plus over 30 stunning <br> professionals worldwide</p>
+                        <p>Plus over 30 stunning
+                            <br> professionals worldwide</p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <!--end of faces-->
@@ -121,7 +126,7 @@ Onac</h3>
                 </div>
             </div>
         </div>
-        
+
         <div class="ambiance">
             <div class="row">
                 <div class="col-lg-1 col-lg-offset-1">
@@ -136,22 +141,23 @@ Onac</h3>
                         <div class="ambianceSmall col-lg-6">
                             <img src="img/about/ambiance2.png" alt="">
                         </div>
-                        
+
                         <div class="back col-lg-6">
-                                <h1>Our comfy space</h1>
-                                <img src="img/about/instagram.png" alt="">
+                            <h1>Our comfy space</h1>
+                            <img src="img/about/instagram.png" alt="">
                         </div>
-                        
+
                         <div class="third ambianceSmall col-lg-6 col-lg-offset-6">
                             <img src="img/about/ambiance4.png" alt="">
                         </div>
-                        
+
                         <div class="instagram-back col-lg-6">
-                                <a class="learn" href="">
-                                    <p>Find more <br><span>in Our</span> Instagram</p>
-                                </a>
+                            <a class="learn" href="">
+                                <p>Find more
+                                    <br><span>in Our</span> Instagram</p>
+                            </a>
                         </div>
-                        
+
                         <div class="fourth ambianceSmall col-lg-6 col-lg-offset-6">
                             <img src="img/about/ambiance5.png" alt="">
                         </div>
@@ -159,18 +165,19 @@ Onac</h3>
                     </div>
                 </div>
                 <div class="n-pad-r-l col-lg-4">
-                   <div class="row">
-                       <div class="ambianceBig col-lg-12">
-                           <img src="img/about/ambiance3.png" alt="">
-                       </div>
-                       <div class="fifth ambianceSmall col-lg-6">
-                           <img src="img/about/ambiance6.png" alt="">
-                       </div>
-                   </div>
-                    
+                    <div class="row">
+                        <div class="ambianceBig col-lg-12">
+                            <img src="img/about/ambiance3.png" alt="">
+                        </div>
+                        <div class="fifth ambianceSmall col-lg-6">
+                            <img src="img/about/ambiance6.png" alt="">
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div><!--end of ambiance-->
+        </div>
+        <!--end of ambiance-->
 
 
         <div class="action">
@@ -216,6 +223,45 @@ Onac</h3>
     </div>
     <!--end of .wrapper-->
 
+    <div id="modal_form">
+        <span id="modal_close"></span>
+        <form id="modal">
+            <p>
+                My name is
+                <input type="text" name="firstname" value="Michael Cohen"> and you can
+                <br> reach me at
+                <input type="tel" name="design" value="design"> or
+                <input type="text" name="phone" value="phone number">.
+            </p>
+
+            <p>
+                I`m looking for a partner for
+                <select name="discipline" form="modal">
+                    <option value="discipline">discipline</option>
+                    <option value=".">.</option>
+                    <option value="..">..</option>
+                    <option value="...">...</option>
+                </select>
+                with a goal to
+                <br> complete that near
+                <input type="text" name="date" value="date or timeframe"> and want to
+                <br> stay around a budget of
+                <select name="amount" form="modal">
+                    <option value="rough amount">rough amount</option>
+                    <option value=".">.</option>
+                    <option value="..">..</option>
+                    <option value="...">...</option>
+                </select>.
+            </p>
+            <p>
+                My message is
+                <input type="text" name="message" value="message here">.
+            </p>
+
+            <submit>Send</submit>
+        </form>
+    </div>
+    <div id="overlay"></div>
 </body>
 
 </html>
