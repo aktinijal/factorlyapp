@@ -1,4 +1,7 @@
-@media (max-width: 1900px) {
+@media (max-width: 1920px) {
+    body {
+        font-size: 23px;
+    }
     .tempor {
         position: absolute;
         top: 0;
@@ -41,7 +44,6 @@
         zoom: 1;
         opacity: 0;
     }
-
     .phone-wrapper {
         position: relative;
         top: 250px;
@@ -87,23 +89,14 @@
         top: 0;
         z-index: 0;
     }
-    p {
-        font: 23px/40px LarsseitRegular;
-    }
     h1.title {
         margin-bottom: 40px;
-        font: 60px/75px LarsseitMedium;
     }
     h2 {
         margin-top: 65px;
         margin-bottom: 30px;
-        font: 45px/54.7px LarsseitMedium;
-    }
-    .home {
-        /*                background: #f0f0f0 url(../img/background1680.png) no-repeat top center;*/
     }
     .header {
-        /*        opacity: 0;*/
         height: 125px;
         padding: 45px 65px;
     }
@@ -132,7 +125,6 @@
     }
     /**********************HERO**********************/
     .hero {
-        /*        opacity: 0;*/
         padding-top: 95px;
         padding-bottom: 370px;
     }
@@ -142,12 +134,6 @@
         height: 75px;
         font: 20px/35px LarsseitMedium;
     }
-    /*
-    .hero .arrowBottom {
-        margin: 125px auto 200px;
-        width: 40px;
-    }
-*/
     /**********************EXPERTIZE**********************/
     h4.sectionName {
         width: 157px;
@@ -161,11 +147,7 @@
     .expertize {
         margin-bottom: 240px;
     }
-    .back {
-        /*        top: -65px;*/
-    }
     .back h1 {
-        font: 107px/112px CaslonGraphiqueEF;
     }
     .learn span {
         height: 60px;
@@ -176,7 +158,6 @@
         margin-bottom: 40px;
     }
     .expertize li {
-        font: 21px/64.65px LarsseitMedium;
     }
     .expertize li img {
         width: 35px;
@@ -213,24 +194,22 @@
         bottom: -90px;
     }
     .action {
-        /*        background-color: #f0f0f0;*/
         margin-top: 350px;
     }
     .cases footer {
-        /*        background-color: #f0f0f0;*/
         height: 180px;
         padding: 50px 65px;
     }
-    footer {
+    footer,
+    .contact footer {
         height: 135px;
     }
     footer .request {
         margin-top: 0;
     }
     .copyright p {
-        font: 18px/35px LarsseitMedium;
+/*        font: 18px/35px LarsseitMedium;*/
     }
-    
     /**************************CASE******************/
     .cases .back {
         top: 0px;
@@ -241,10 +220,11 @@
     .projects-text {
         margin-top: 65px;
         margin-bottom: 135px;
-        font: 23px/40px LarsseitRegular;
     }
-    .product-details ul li {
-        font: 28px/64px LarsseitMedium;
+    h4.name {
+        margin-top: 62px;
+    }
+    h5.position {
     }
     .cases footer {
         margin-top: 320px;
@@ -261,22 +241,14 @@
     }
     .zoom-face p {
         margin-top: 100px;
-        font: 20px/40px LarsseitMedium;
-    }
-    .faces h3 {
-        font: 35px/40px LarsseitMedium;
     }
     .faces .text h4 {
         margin-top: 10px;
-        font: 24px/58px LarsseitMedium;
     }
     div.plus {
         margin-top: 85px;
         padding-left: 50px;
         background-size: 25%;
-    }
-    .plus p {
-        font: 35px/50px LarsseitMedium;
     }
     .why {
         margin-bottom: 230px;
@@ -284,6 +256,9 @@
     }
     .ambiance h4.sectionName {
         width: 160px;
+    }
+    .contacts {
+        padding: 350px 0 200px;
     }
 }
 
