@@ -106,12 +106,13 @@
     background-size: 100%;
 }
 
-#modal_form p {
+#modal_form .row {
+    font-family: LarsseitMedium;
     font-size: 144.4%;
     margin-top: 40px;
 }
 
-#modal_form p:first-child {
+#modal_form .row:first-child {
     margin-top: 0;
 }
 
@@ -129,8 +130,21 @@
 #modal_form input[name="date"],
 #modal_form select,
 #modal_form input[name="message"] {
+    font-family: LarsseitMedium;
+    font-size: 100%;
     color: #fff;
     border-bottom-color: #fff;
+}
+#datetimepicker1{
+    display: inline-block;
+}
+.input-append.date .add-on i, .input-prepend.date .add-on i {
+    display: inline-block;
+    margin-left: -305px;
+    margin-bottom: -15px;
+    height: 63px;
+    width: 305px;
+    cursor: pointer;
 }
 
 #modal_form select {
@@ -227,7 +241,11 @@
 .wrapper {
     position: absolute;
     top: 0;
-    z-index: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
 }
 
 
@@ -244,8 +262,8 @@
 }
 
 body {
+    position: relative;
     width: 100%;
-    height: 100%;
     background-color: #fff;
     font-size: 36px;
 }
@@ -269,16 +287,6 @@ h2 {
 
 .home {
     opacity: 0;
-}
-
-.wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1;
-    box-sizing: border-box;
 }
 
 .header {
@@ -384,7 +392,7 @@ h4.sectionName {
 
 .back h1 {
     color: #fff;
-/*    font: 172px/180px CaslonGraphiqueEF;*/
+    /*    font: 172px/180px CaslonGraphiqueEF;*/
     font: 478%/105% CaslonGraphiqueEF;
 }
 
@@ -414,7 +422,7 @@ a.learn {
 
 .expertize li {
     color: #111111;
-     font: 111%/260% LarsseitMedium;
+    font: 111%/260% LarsseitMedium;
 }
 
 .expertize li img {
@@ -489,7 +497,7 @@ a.learn {
 
 footer {
     height: 200px;
-    padding: 68px 90px;
+    padding: 50px 90px;
 }
 
 
@@ -612,8 +620,98 @@ div.ambianceSmall:first-child,
 
 /*******Case********/
 
-.cases {
+.case1 {
     background: #f0f0f0 url(../img/cases/background.png) no-repeat top center;
+}
+.case2 {
+    background: #cfdee8;
+}
+.case3{
+    background: #f2dcdc;
+}
+.case4{
+    background: #cfdee8;
+}
+.case5{
+    background: #dcd9ee;
+}
+.case6{
+    background: #cfdee8;
+}
+.case7{
+    background: #f2dcdc;
+}
+.case8{
+    background: #cfdee8;
+}
+.pagingInfoBlock.casesPaging {
+    position: absolute;
+    right: 740px;
+    top: 1370px;
+    bottom: auto;
+    z-index: 3;
+}
+
+.sliderBig.slick-prev,
+.sliderBig.slick-next {
+    position: absolute;
+    width: 80px;
+    height: 38px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.sliderBig.slick-prev {
+    top: 1385px;
+    right: 575px;
+    background: url('../img/customers-left.png') no-repeat;
+    background-size: 100%;
+    z-index: 3;
+}
+
+.sliderBig.slick-next {
+    top: 1420px;
+    right: 530px;
+    background: url('../img/customers-right.png') no-repeat;
+    background-size: 100%;
+}
+
+
+.pagingInfoBlock.casesPagingRed {
+    bottom: 575px;
+    top: auto;
+}
+.pagingInfoBlock.casesPagingRed .pagingInfo{
+    color: #fd3b3b;
+}
+.slick-prev.red,
+.slick-next.red{
+    position: absolute;
+    width: 80px;
+    height: 38px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+}
+.cases-slick .slick-prev.red {
+    bottom: 590px;
+    right: 575px;
+    top: auto;
+    background: url('../img/cases/arrow-left.png') no-repeat;
+    background-size: 100%;
+    z-index: 3;
+}
+
+.cases-slick .slick-next.red {
+    bottom: 550px;
+    right: 530px;
+    top: auto;
+    background: url('../img/cases/arrow-right.png') no-repeat;
+    background-size: 100%;
+    z-index: 3;
 }
 
 .cases .case {
@@ -631,10 +729,12 @@ div.ambianceSmall:first-child,
 }
 
 .project-screen {
+    position: inherit;
     width: 27.66%;
     float: left;
     margin-left: 20px;
     margin-right: 20px;
+    z-index: 1;
 }
 
 .project-screen:first-child {
@@ -653,14 +753,12 @@ div.ambianceSmall:first-child,
     position: absolute;
     top: -80px;
     right: -140px;
-    z-index: -1;
 }
 
 .tomato {
     position: absolute;
     top: 175px;
     right: -160px;
-    z-index: -1;
 }
 
 .google {
@@ -708,31 +806,6 @@ h5.position {
     font: 88.9%/150% LarsseitRegular;
 }
 
-.productPagingInfoBlock {
-    position: absolute;
-    right: 220px;
-    bottom: -120px;
-    color: #fd3b3b;
-}
-
-.productPagingInfoBlock p {
-    color: #fd3b3b;
-}
-
-.projects .slick-prev {
-    right: 20%;
-    bottom: -108px;
-    background: url('../img/cases/arrow-left.png') no-repeat;
-    background-size: 100%;
-}
-
-.projects .slick-next {
-    right: 18%;
-    bottom: -135px;
-    background: url('../img/cases/arrow-right.png') no-repeat;
-    background-size: 100%;
-}
-
 .cases footer {
     text-align: center;
     margin-top: 520px;
@@ -740,6 +813,7 @@ h5.position {
 
 footer .request {
     height: 80px;
+    line-height: 80px;
     margin: 0 auto;
     font-size: 28px;
 }
@@ -754,9 +828,12 @@ footer .request {
 /*******Contact********/
 
 .contact {
-    min-width: 100%;
-    min-height: 100%;
     position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
     height: 100%;
     background: url(../img/contact/background.png) no-repeat top center;
     -moz-background-size: cover;
@@ -772,22 +849,23 @@ footer .request {
 */
     position: absolute;
     width: 100%;
-    bottom: 0;
-    top: 0;
-    padding: 350px 0 200px;
-    z-index: -2;
+    bottom: 200px;
+    top: 125px;
+    padding-top: 275px;
+    /*    padding: 350px 0 200px;*/
 }
 
 .contacts img {
-    /*    margin-bottom: 90px;*/
+    margin-bottom: 90px;
 }
 
 .contacts p {
-    /*    margin-bottom: 45px;*/
+    margin-bottom: 45px;
 }
+
 .contacts .request {
-/*        margin-top: 45px;*/
-        margin-top: 0;
+    margin-top: 45px;
+    /*    margin-top: 0;*/
 }
 
 .contact footer {
@@ -795,5 +873,5 @@ footer .request {
     bottom: 0;
     height: 200px;
     width: 100%;
-    padding: 68px 90px;
+    padding: 50px 90px;
 }

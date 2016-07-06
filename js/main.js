@@ -74,69 +74,133 @@ $(document).ready(function () {
             });
         });
     });
-/****************************************************/
+    /****************************************************/
     var x = false;
-    some = function() {
-        $('.request').css({'background-color': '#fff'});
-        $('.request').css({'color': '#111'});
-        $('.request').css({'box-shadow': 'none'});
-        $('.footer-bg2').animate({opacity: 1}, 700, function() {
-            $('.request').css({'background-color': '#111'});
-            $('.request').css({'color': '#fff'});
-            $('.request').css({'box-shadow': '0px 30px 60px 0px rgba(17, 17, 17, 0.4)'});
-            $('.footer-bg2').animate({opacity: 0}, 50, function() {
-                $('.request').css({'background-color': '#fff'});
-                $('.request').css({'color': '#111'});
-                $('.request').css({'box-shadow': 'none'});
-                $('.footer-bg2').animate({opacity: 1}, 300, function() {
-                    $('.request').css({'background-color': '#111'});
-                    $('.request').css({'color': '#fff'});
-                    $('.request').css({'box-shadow': '0px 30px 60px 0px rgba(17, 17, 17, 0.4)'});
-                    $('.footer-bg2').animate({opacity: 0}, 30, function() {
-                        $('.request').css({'background-color': '#fff'});
-                        $('.request').css({'color': '#111'});
-                        $('.request').css({'box-shadow': 'none'});
-                        $('.footer-bg2').animate({opacity: 1}, 100, function() {
-                            $('.request').css({'background-color': '#111'});
-                            $('.request').css({'color': '#fff'});
-                            $('.request').css({'box-shadow': '0px 30px 60px 0px rgba(17, 17, 17, 0.4)'});
-                            $('.footer-bg2').animate({opacity: 0}, 20, function() {
-                                $('.request').css({'background-color': '#fff'});
-                                $('.request').css({'color': '#111'});
-                                $('.request').css({'box-shadow': 'none'});
-                                $('.footer-bg2').animate({opacity: 1}, 10);
+    some = function () {
+        $('.request').css({
+            'background-color': '#fff'
+        });
+        $('.request').css({
+            'color': '#111'
+        });
+        $('.request').css({
+            'box-shadow': 'none'
+        });
+        $('.footer-bg2').animate({
+            opacity: 1
+        }, 700, function () {
+            $('.request').css({
+                'background-color': '#111'
+            });
+            $('.request').css({
+                'color': '#fff'
+            });
+            $('.request').css({
+                'box-shadow': '0px 30px 60px 0px rgba(17, 17, 17, 0.4)'
+            });
+            $('.footer-bg2').animate({
+                opacity: 0
+            }, 50, function () {
+                $('.request').css({
+                    'background-color': '#fff'
+                });
+                $('.request').css({
+                    'color': '#111'
+                });
+                $('.request').css({
+                    'box-shadow': 'none'
+                });
+                $('.footer-bg2').animate({
+                    opacity: 1
+                }, 300, function () {
+                    $('.request').css({
+                        'background-color': '#111'
+                    });
+                    $('.request').css({
+                        'color': '#fff'
+                    });
+                    $('.request').css({
+                        'box-shadow': '0px 30px 60px 0px rgba(17, 17, 17, 0.4)'
+                    });
+                    $('.footer-bg2').animate({
+                        opacity: 0
+                    }, 30, function () {
+                        $('.request').css({
+                            'background-color': '#fff'
+                        });
+                        $('.request').css({
+                            'color': '#111'
+                        });
+                        $('.request').css({
+                            'box-shadow': 'none'
+                        });
+                        $('.footer-bg2').animate({
+                            opacity: 1
+                        }, 100, function () {
+                            $('.request').css({
+                                'background-color': '#111'
+                            });
+                            $('.request').css({
+                                'color': '#fff'
+                            });
+                            $('.request').css({
+                                'box-shadow': '0px 30px 60px 0px rgba(17, 17, 17, 0.4)'
+                            });
+                            $('.footer-bg2').animate({
+                                opacity: 0
+                            }, 20, function () {
+                                $('.request').css({
+                                    'background-color': '#fff'
+                                });
+                                $('.request').css({
+                                    'color': '#111'
+                                });
+                                $('.request').css({
+                                    'box-shadow': 'none'
+                                });
+                                $('.footer-bg2').animate({
+                                    opacity: 1
+                                }, 10);
                             });
                         });
                     });
                 });
             });
         });
-        
+
     }
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         var scrollBottom = $(window).scrollTop() - $('.home').height();
-        if(scrollBottom >= -1000 && x == false) {
-           some();
+        if (scrollBottom >= -1000 && x == false) {
+            some();
             x = true;
         }
-        if(scrollBottom <= -1500) {
+        if (scrollBottom <= -1500) {
             x = false;
-            $('.footer-bg2').animate({opacity: 0}, 10)
-            $('.request').css({'background-color': '#111'});
-            $('.request').css({'color': '#fff'});
-            $('.request').css({'box-shadow': '0px 30px 60px 0px rgba(17, 17, 17, 0.4)'});
+            $('.footer-bg2').animate({
+                opacity: 0
+            }, 10)
+            $('.request').css({
+                'background-color': '#111'
+            });
+            $('.request').css({
+                'color': '#fff'
+            });
+            $('.request').css({
+                'box-shadow': '0px 30px 60px 0px rgba(17, 17, 17, 0.4)'
+            });
         }
     });
-    
 
-    
-    
-    
-    
-    
 
-/********************Modal***************************/
+
+
+
+
+
+
+    /********************Modal***************************/
     $('.request').click(function () {
         $('#overlay').fadeIn(400,
             function () {
@@ -186,54 +250,61 @@ $(document).ready(function () {
 
     $slickElement.slick({});
 
-$('.cases-slick > button').addClass('littleSlick');
-    var $statusProduct = $('.productPagingInfo');
-    var $slickProduct = $('.products-slick');
+//    $('.cases-slick > button').addClass('littleSlick');
+//    var $statusProduct = $('.productPagingInfo');
+//    var $slickProduct = $('.products-slick');
+//
+//    $slickProduct.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+//        var i = (currentSlide ? currentSlide : 0) + 1;
+//        $statusProduct.text("Case " + i + ' of ' + slick.slideCount);
+//    });
+//
+//    $slickProduct.slick({});
 
-    $slickProduct.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-        var i = (currentSlide ? currentSlide : 0) + 1;
-        $statusProduct.text("Case " + i + ' of ' + slick.slideCount);
-    });
 
-    $slickProduct.slick({});
-
-    
     /***********************ABOUT.html******************/
 
-        $('.zoom-face').hover(function(){
-            $(this).find('.text > p').animate({
-                opacity : '1'
-            }, 300);
-            $(this).find('.face > img').animate({
-                width : '105%',
-                left: '-2.5%'
-                
-            }, 300);
-        });
-        $('.zoom-face').mouseleave(function(){
-            $(this).find('.text > p').animate({
-                opacity : '0'
-            }, 300);
-            $(this).find('.face > img').animate({
-                width : '100%',
-//                left: -0
-                
-            }, 100);
-        });
-    
-//    $('.zoom-photo').hover(function(){
-//            $(this).find('img').animate({
-//                width : '105%',
-//                left: '-2.5%'
-//                
-//            }, 300);
-//        });
-//        $('.zoom-photo').mouseleave(function(){
-//            $(this).find('img').animate({
-//                width : '100%',
-//                left: '0'
-//                
-//            }, 300);
-//        });
+    $('.zoom-face').hover(function () {
+        $(this).find('.text > p').animate({
+            opacity: '1'
+        }, 300);
+        $(this).find('.face > img').animate({
+            width: '105%',
+            left: '-2.5%'
+
+        }, 300);
+    });
+    $('.zoom-face').mouseleave(function () {
+        $(this).find('.text > p').animate({
+            opacity: '0'
+        }, 300);
+        $(this).find('.face > img').animate({
+            width: '100%',
+            //                left: -0
+
+        }, 100);
+    });
+
+    //    $('.zoom-photo').hover(function(){
+    //            $(this).find('img').animate({
+    //                width : '105%',
+    //                left: '-2.5%'
+    //                
+    //            }, 300);
+    //        });
+    //        $('.zoom-photo').mouseleave(function(){
+    //            $(this).find('img').animate({
+    //                width : '100%',
+    //                left: '0'
+    //                
+    //            }, 300);
+    //        });
+
+
+  $(function() {
+    $('#datetimepicker1').datetimepicker({
+      language: 'pt-BR'
+    });
+  });  
 
 });

@@ -80,6 +80,12 @@
     height: 100%;
     min-height: 1px;
 }
+.cases-slick .slick-slide{
+    display: none;
+    float: left;
+    height: auto;
+    min-height: 1px;
+}
 [dir='rtl'] .slick-slide
 {
     float: right;
