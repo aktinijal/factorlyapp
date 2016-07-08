@@ -1,80 +1,5 @@
 $(document).ready(function () {
-    $('.first-triangle').animate({
-        top: 0
-    }, 800);
 
-    $('.second-triangle').animate({
-        top: 250
-    }, 800, function () {
-        //            $('body').css('background-color', '#cfdee8');
-        $('.phone').animate({
-            top: 60
-        }, 600);
-        $('.phone-shadow4').animate({
-            top: 85
-        }, 650);
-        $('.phone-shadow').animate({
-            top: 60
-        }, 700);
-        $('.phone-shadow2').animate({
-            top: 30
-        }, 800);
-        $('.phone-shadow3').animate({
-            top: 0
-        }, 900);
-        $('.first-triangle').animate({
-            top: -10
-        }, 250);
-        $('.second-triangle').animate({
-            top: 260
-        }, 250, function () {
-            $('.first-triangle').animate({
-                top: 0
-            }, 150);
-            $('.second-triangle').animate({
-                top: 220
-            }, 150);
-            $('.watch').animate({
-                top: 280
-            }, 900);
-            $('.watch2').animate({
-                top: 335
-            }, 1000);
-            $('.watch3').animate({
-                top: 350
-            }, 1100, function () {
-                $('.arrow').animate({
-                    top: 940
-                }, 800, function () {
-                    $('.home').animate({
-                        opacity: 1
-                    }, 600);
-                    $('.arrow').animate({
-                        top: 900
-                    }, 300, function () {
-                        $('.arrow').animate({
-                            top: 940
-                        }, 300, function () {
-                            $('.arrow').animate({
-                                top: 920
-                            }, 150, function () {
-                                $('.arrow').animate({
-                                    top: 940
-                                }, 150, function () {
-
-
-
-
-                                    //                                    $('.home').css({visibility:'visible'});
-                                });
-                            });
-                        });
-                    });
-                });
-            });
-        });
-    });
-    /****************************************************/
     var x = false;
     some = function () {
         $('.request').css({
@@ -168,7 +93,8 @@ $(document).ready(function () {
             });
         });
 
-    }
+    };
+    
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         var scrollBottom = $(window).scrollTop() - $('.home').height();
@@ -196,11 +122,7 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-    /********************Modal***************************/
+/********************Modal***************************/
     $('.request').click(function () {
         $('#overlay').fadeIn(400,
             function () {
@@ -224,12 +146,7 @@ $(document).ready(function () {
             );
     });
 
-    /******************Background***********************/
-    $(window).resize(function () {
-
-    });
-
-    /*******************Expertize**********************/
+/*******************Expertize**********************/
     var expertizeItemHeight = $(".app").height();
     $(".learn-div").height(expertizeItemHeight);
     $(".idea").height(expertizeItemHeight);
@@ -239,30 +156,53 @@ $(document).ready(function () {
         $(".idea").height(expertizeItemHeight);
     });
 
-    /********************Slick************************/
+/********************Slick************************/
     var $status = $('.pagingInfo');
     var $slickElement = $('.cases-slick');
-
     $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;
         $status.text("Case " + i + ' of ' + slick.slideCount);
     });
-
     $slickElement.slick({});
-
-//    $('.cases-slick > button').addClass('littleSlick');
-//    var $statusProduct = $('.productPagingInfo');
-//    var $slickProduct = $('.products-slick');
-//
-//    $slickProduct.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-//        var i = (currentSlide ? currentSlide : 0) + 1;
-//        $statusProduct.text("Case " + i + ' of ' + slick.slideCount);
+    
+    
+    
+    var $status = $('.pagingInfo');
+    var $slickElementHome = $('.cases-slickHome');
+    $slickElementHome.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status.text("Case " + i + ' of ' + slick.slideCount);
+    });
+    $slickElementHome.slick({});
+    
+//    $('').onclick( function () {
+//        console.log('uih');
+//        var slideIndex = 3;
+//        $slickElement.slick('slickGoTo', parseInt(slideIndex));
+////        e.preventDefault();
 //    });
-//
-//    $slickProduct.slick({});
 
+    $(document).ready(function () {
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+            },
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                titleSrc: function (item) {
+                    return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+                }
+            }
+        });
+    });
 
-    /***********************ABOUT.html******************/
+/***********************ABOUT.html******************/
 
     $('.zoom-face').hover(function () {
         $(this).find('.text > p').animate({
@@ -285,26 +225,13 @@ $(document).ready(function () {
         }, 100);
     });
 
-    //    $('.zoom-photo').hover(function(){
-    //            $(this).find('img').animate({
-    //                width : '105%',
-    //                left: '-2.5%'
-    //                
-    //            }, 300);
-    //        });
-    //        $('.zoom-photo').mouseleave(function(){
-    //            $(this).find('img').animate({
-    //                width : '100%',
-    //                left: '0'
-    //                
-    //            }, 300);
-    //        });
 
-
-  $(function() {
-    $('#datetimepicker1').datetimepicker({
-      language: 'pt-BR'
+    $(function () {
+        $('#datetimepicker1').datetimepicker({
+            language: 'pt-BR'
+        });
     });
-  });  
+
+
 
 });

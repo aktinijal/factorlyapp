@@ -12,16 +12,14 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link type="text/css" href="css/reset.css" rel="stylesheet">
-
+    <link type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
     <link type="text/css" href="css/media.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
+    <link rel="stylesheet" href="magnificPopup/dist/magnific-popup.css">
 
-    <script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script defer type="text/javascript" src="js/jquery.min.js"></script>
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script defer type="text/javascript" src="slick/slick/slick.min.js"></script>
-    <script defer type="text/javascript" src="js/main.js"></script>
+
+
 </head>
 
 <body>
@@ -51,14 +49,15 @@
                 <div class="col-lg-1 col-lg-offset-1">
                     <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Faces</h4>
                 </div>
+
                 <div class="zoom-face col-lg-2">
                     <div class="text">
-                        <h3>Lucian <br> Cocan</h3>
+                        <h3>Michael <br> Cohen</h3>
                         <h4>CEO</h4>
                         <p>Lorem ipsum</p>
                     </div>
                     <div class="face">
-                        <img src="img/about/face1.png" alt="">
+                        <img src="img/about/face4.png" alt="">
                     </div>
                 </div>
                 <div class="zoom-face col-lg-2">
@@ -84,15 +83,14 @@ Onac</h3>
                 </div>
                 <div class="zoom-face col-lg-2">
                     <div class="text">
-                        <h3>Michael <br> Cohen</h3>
+                        <h3>Lucian <br> Cocan</h3>
                         <h4>COO</h4>
                         <p>Lorem ipsum</p>
                     </div>
                     <div class="face">
-                        <img src="img/about/face4.png" alt="">
+                        <img src="img/about/face1.png" alt="">
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="plus col-lg-3 col-lg-offset-2">
                         <p>Plus over 30 stunning
@@ -104,7 +102,8 @@ Onac</h3>
         </div>
         <!--end of faces-->
 
-
+<img src="img/about/factorly.png" alt="" class="factorly">
+       
         <div class="why">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -226,15 +225,15 @@ Onac</h3>
     <div id="modal_form">
         <span id="modal_close"></span>
         <form id="modal">
-            <p>
+            <div class="row">
                 My name is
                 <input type="text" name="firstname" value="Michael Cohen"> and you can
                 <br> reach me at
                 <input type="tel" name="design" value="design"> or
                 <input type="text" name="phone" value="phone number">.
-            </p>
+            </div>
 
-            <p>
+            <div class="row">
                 I`m looking for a partner for
                 <select name="discipline" form="modal">
                     <option value="discipline">discipline</option>
@@ -244,7 +243,14 @@ Onac</h3>
                 </select>
                 with a goal to
                 <br> complete that near
-                <input type="text" name="date" value="date or timeframe"> and want to
+                <div id="datetimepicker1" class="input-append date">
+                    <input data-format="dd/MM/yyyy hh:mm:ss" type="text" name="date" value="date or timeframe"></input>
+                    <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
+                </div>
+                and want to
                 <br> stay around a budget of
                 <select name="amount" form="modal">
                     <option value="rough amount">rough amount</option>
@@ -252,16 +258,26 @@ Onac</h3>
                     <option value="..">..</option>
                     <option value="...">...</option>
                 </select>.
-            </p>
-            <p>
+            </div>
+            <div class="row">
                 My message is
                 <input type="text" name="message" value="message here">.
-            </p>
+            </div>
 
             <submit>Send</submit>
         </form>
     </div>
     <div id="overlay"></div>
+
+    <script defer src="https://code.jquery.com/jquery-2.1.4.js"   integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4="   crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="js/jquery.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--    <script defer type="text/javascript" src="slick/slick/slick.min.js"></script>-->
+    <script defer type="text/javascript" src="slick/slick/slick.js"></script>
+    <script defer type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script defer type="text/javascript" src="js/main.js"></script>
+    <script defer type="text/javascript" src="magnificPopup/dist/jquery.magnific-popup.js"></script>
+
 </body>
 
 </html>

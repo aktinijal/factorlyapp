@@ -12,19 +12,18 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link type="text/css" href="css/reset.css" rel="stylesheet">
-
+    <link type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
     <link type="text/css" href="css/media.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
+    <link rel="stylesheet" href="magnificPopup/dist/magnific-popup.css">
 
-    <script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script defer type="text/javascript" src="js/jquery.min.js"></script>
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script defer type="text/javascript" src="slick/slick/slick.min.js"></script>
-    <script defer type="text/javascript" src="js/main.js"></script>
+
+
+
 </head>
 
-<body>
+<body style="height: 100%">
     <div class="contact">
         <div class="row">
             <div class="col-lg-12">
@@ -47,7 +46,7 @@
         </div>
 
 
-        <div class="contacts row">
+        <div class="contacts row" id="home">
             <div class="col-lg-8 col-lg-offset-2">
                 <div class="row">
                     <div class="col-lg-4">
@@ -86,19 +85,18 @@
     <!--end of .contact .wrapper-->
 
 
-
     <div id="modal_form">
         <span id="modal_close"></span>
         <form id="modal">
-            <p>
+            <div class="row">
                 My name is
                 <input type="text" name="firstname" value="Michael Cohen"> and you can
                 <br> reach me at
                 <input type="tel" name="design" value="design"> or
                 <input type="text" name="phone" value="phone number">.
-            </p>
+            </div>
 
-            <p>
+            <div class="row">
                 I`m looking for a partner for
                 <select name="discipline" form="modal">
                     <option value="discipline">discipline</option>
@@ -108,7 +106,14 @@
                 </select>
                 with a goal to
                 <br> complete that near
-                <input type="text" name="date" value="date or timeframe"> and want to
+                <div id="datetimepicker1" class="input-append date">
+                    <input data-format="dd/MM/yyyy hh:mm:ss" type="text" name="date" value="date or timeframe"></input>
+                    <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
+                </div>
+                and want to
                 <br> stay around a budget of
                 <select name="amount" form="modal">
                     <option value="rough amount">rough amount</option>
@@ -116,16 +121,30 @@
                     <option value="..">..</option>
                     <option value="...">...</option>
                 </select>.
-            </p>
-            <p>
+            </div>
+            <div class="row">
                 My message is
                 <input type="text" name="message" value="message here">.
-            </p>
+            </div>
 
             <submit>Send</submit>
         </form>
     </div>
     <div id="overlay"></div>
+
+
+
+    <script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script defer type="text/javascript" src="js/jquery.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--    <script defer type="text/javascript" src="slick/slick/slick.min.js"></script>-->
+    <script defer type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <script defer type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script defer type="text/javascript" src="js/main.js"></script>
+    <script defer type="text/javascript" src="js/contact.js"></script>
+    <script defer type="text/javascript" src="magnificPopup/dist/jquery.magnific-popup.js"></script>
+
+
 </body>
 
 </html>

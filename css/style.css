@@ -80,7 +80,12 @@
 
 
 /*************************MODAL*************************/
-
+.bootstrap-datetimepicker-widget {
+    width: 550px;
+}
+.dropdown-menu {
+    font-size: 100%;
+}
 #modal_form {
     display: none;
     position: fixed;
@@ -135,10 +140,13 @@
     color: #fff;
     border-bottom-color: #fff;
 }
-#datetimepicker1{
+
+#datetimepicker1 {
     display: inline-block;
 }
-.input-append.date .add-on i, .input-prepend.date .add-on i {
+
+.input-append.date .add-on i,
+.input-prepend.date .add-on i {
     display: inline-block;
     margin-left: -305px;
     margin-bottom: -15px;
@@ -214,6 +222,7 @@
     top: -1050px;
 }
 
+/*
 .watch {
     position: absolute;
     right: 150px;
@@ -231,12 +240,34 @@
     right: 375px;
     top: -790px;
 }
+*/
+
+.watch {
+    position: absolute;
+    right: 4000;
+    top: 280px;
+}
+
+.watch2 {
+    position: absolute;
+    right: 4000;
+    top: 335px;
+}
+
+.watch3 {
+    position: absolute;
+    right: 4000;
+    top: 350px;
+}
+
 
 .arrow {
+    opacity: 0;
     position: absolute;
     right: 49%;
-    top: -100px;
+    cursor: pointer;
 }
+
 
 .wrapper {
     position: absolute;
@@ -264,6 +295,7 @@
 body {
     position: relative;
     width: 100%;
+    /*    height: 100%;*/
     background-color: #fff;
     font-size: 36px;
 }
@@ -366,7 +398,7 @@ button.request {
 h4.sectionName {
     width: 252px;
     position: relative;
-    top: 270px;
+    top: 330px;
     left: 42px;
     color: #fd3b3b;
     font: 100% LarsseitMedium;
@@ -381,6 +413,7 @@ h4.sectionName {
 }
 
 .expertize {
+    margin-top: 385px;
     margin-bottom: 380px;
 }
 
@@ -432,9 +465,22 @@ a.learn {
 
 
 /**********************Cases**************************/
-
-.case-wrapper {
+.case-wrapper{
     position: relative;
+}
+
+.slick-img-wrap img{
+    position: relative;
+}
+
+.slick-img-wrap a{
+    position: absolute;
+    bottom: 25px;
+    margin-left: 20px;
+    font-size: 100%;
+    color: #111111;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .slick-prev,
@@ -482,16 +528,10 @@ a.learn {
     bottom: -136px;
 }
 
-
-/**********************Principle***********************/
-
-
 /********************Call to action*******************/
-
 .action button.request {
     margin-bottom: 75px;
 }
-
 
 /**********************Footer***********************/
 
@@ -501,7 +541,7 @@ footer {
 }
 
 
-/***ABOUT***/
+/*********************ABOUT*******************/
 
 .about {
     background: #f0f0f0 url(../img/about/background.png) no-repeat top center;
@@ -569,9 +609,14 @@ div.plus {
     font: 155.5%/128.6% LarsseitMedium;
 }
 
+.factorly{
+    position: absolute;
+    right: 505px;
+}
+
 .why {
     margin-bottom: 330px;
-    padding-top: 440px;
+    padding-top: 540px;
 }
 
 .ambiance h4.sectionName {
@@ -618,35 +663,48 @@ div.ambianceSmall:first-child,
 }
 
 
-/*******Case********/
-
+/*********************Case.html********************/
+.cases .logo img{
+    float: left;
+}
+.cases .logo img:last-child {
+    margin-top: 20px;
+}
 .case1 {
     background: #f0f0f0 url(../img/cases/background.png) no-repeat top center;
 }
+
 .case2 {
     background: #cfdee8;
 }
-.case3{
+
+.case3 {
     background: #f2dcdc;
 }
-.case4{
+
+.case4 {
     background: #cfdee8;
 }
-.case5{
+
+.case5 {
     background: #dcd9ee;
 }
-.case6{
+
+.case6 {
     background: #cfdee8;
 }
-.case7{
+
+.case7 {
     background: #f2dcdc;
 }
-.case8{
+
+.case8 {
     background: #cfdee8;
 }
+
 .pagingInfoBlock.casesPaging {
     position: absolute;
-    right: 740px;
+/*    right: 740px;*/
     top: 1370px;
     bottom: auto;
     z-index: 3;
@@ -678,16 +736,17 @@ div.ambianceSmall:first-child,
     background-size: 100%;
 }
 
-
 .pagingInfoBlock.casesPagingRed {
     bottom: 575px;
     top: auto;
 }
-.pagingInfoBlock.casesPagingRed .pagingInfo{
+
+.pagingInfoBlock.casesPagingRed .pagingInfo {
     color: #fd3b3b;
 }
+
 .slick-prev.red,
-.slick-next.red{
+.slick-next.red {
     position: absolute;
     width: 80px;
     height: 38px;
@@ -696,6 +755,7 @@ div.ambianceSmall:first-child,
     background-color: transparent;
     color: transparent;
 }
+
 .cases-slick .slick-prev.red {
     bottom: 590px;
     right: 575px;
@@ -729,12 +789,20 @@ div.ambianceSmall:first-child,
 }
 
 .project-screen {
-    position: inherit;
+    position: relative;
     width: 27.66%;
     float: left;
     margin-left: 20px;
     margin-right: 20px;
     z-index: 1;
+}
+.projects-screen a{
+    display: block;
+    z-index: 2;
+    position: absolute;
+}
+.mfp-bottom-bar {
+    display: none;
 }
 
 .project-screen:first-child {
@@ -760,9 +828,14 @@ div.ambianceSmall:first-child,
     top: 175px;
     right: -160px;
 }
-
+.together {
+    width: 25%;
+}
 .google {
     margin-bottom: 50px;
+}
+.google img, .apple img{
+    width: 80%;
 }
 
 .back-buttons {
@@ -782,6 +855,7 @@ div.ambianceSmall:first-child,
 }
 
 .quote {
+    background: url(../img/cases/quote.png) no-repeat;
     position: relative;
     margin-top: 120px;
 }
@@ -808,9 +882,16 @@ h5.position {
 
 .cases footer {
     text-align: center;
+/*    margin-top: 520px;*/
+    position: absolute;
+    bottom: 0;
+    width: 10%;
+}
+.footer-empty{
+    width: 10%;
+    height: 200px;
     margin-top: 520px;
 }
-
 footer .request {
     height: 80px;
     line-height: 80px;
@@ -835,7 +916,7 @@ footer .request {
     height: 100%;
     min-height: 100%;
     height: 100%;
-    background: url(../img/contact/background.png) no-repeat top center;
+    background: url(../img/contact/background.png) no-repeat center center;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -843,16 +924,11 @@ footer .request {
 }
 
 .contacts {
-    /*
-    margin-top: 200px;
-    margin-bottom: 245px;
-*/
     position: absolute;
     width: 100%;
     bottom: 200px;
     top: 125px;
-    padding-top: 275px;
-    /*    padding: 350px 0 200px;*/
+/*    padding-top: 275px;*/
 }
 
 .contacts img {

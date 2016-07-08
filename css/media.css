@@ -70,6 +70,7 @@
             right: 45px;
             top: -1050px;
         }
+        /*
         .watch {
             position: absolute;
             right: 150px;
@@ -85,12 +86,27 @@
             right: 375px;
             top: -790px;
         }
+*/
+        .watch {
+            position: absolute;
+            right: 5000;
+            top: 280px;
+        }
+        .watch2 {
+            position: absolute;
+            right: 5000;
+            top: 335px;
+        }
+        .watch3 {
+            position: absolute;
+            right: 5000;
+            top: 350px;
+        }
         .arrow {
             position: absolute;
             right: 49%;
             top: -100px;
         }
-        
         h1.title {
             margin-bottom: 40px;
         }
@@ -147,6 +163,7 @@
             margin-right: 20px;
         }
         .expertize {
+            margin-top: 185px;
             margin-bottom: 240px;
         }
         .back h1 {}
