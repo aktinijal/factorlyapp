@@ -59,7 +59,7 @@
     /********************************************/
     .phone-wrapper {
         position: relative;
-        top: 100px;
+        top: 3%;
         right: 10%;
         height: 427px;
     }
@@ -72,7 +72,7 @@
     .phone-shadow4 {
         top: -1050px;
     }
-    .watch-wrapper {    
+    .watch-wrapper {
         width: 25%;
         top: -200px;
         left: 66%;
@@ -114,7 +114,7 @@
     /**********************HERO**********************/
     .hero {
         padding-top: 95px;
-        padding-bottom: 370px;
+        /*        padding-bottom: 370px;*/
     }
     button.request {
         margin-top: 40px;
@@ -311,5 +311,24 @@
         z-index: -1;
         zoom: 1;
         opacity: 0;
+    }
+    .phone-wrapper {
+        /*        top: 5%;*/
+    }
+}
+
+@media (max-width: 1380px) {
+    body {
+        font-size: 18px;
+    }
+    .hero {
+        padding-top: 15px;
+    }
+    .expertize p {
+        margin-bottom: 40px;
+    }
+    .principle h2 {
+        margin-top: 25px;
+        margin-bottom: 15px;
     }
 }

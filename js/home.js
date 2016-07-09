@@ -1,13 +1,13 @@
 $(document).ready(function () {
 
-    function setArrow() {
-        var heroOffset = $('.hero-text').offset();
-        $('.arrow').css({
-            'top': heroOffset.top + $('.hero-text').height() + 25 + 'px'
-        });
-    }
-    setArrow();
-    $(window).resize(setArrow);
+//    function setArrow() {
+//        var heroOffset = $('.hero-text').offset();
+//        $('.arrow').css({
+//            'top': heroOffset.top + $('.hero-text').height() + 25 + 'px'
+//        });
+//    }
+//    setArrow();
+//    $(window).resize(setArrow);
 
     
     

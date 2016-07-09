@@ -1,9 +1,14 @@
 $(document).ready(function () {
     
     function setSectionHeight(){
-        
+        var height = $(window).height();
+        $('.hero').height(height - 140);
+        $('.expertize').height(height);
+        $('.case').height(height);
+        $('.principle').height(height);
     }
-    
+    setSectionHeight();
+    $(window).resize(setSectionHeight);
     
     
     var x = false;
