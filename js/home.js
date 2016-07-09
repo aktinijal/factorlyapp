@@ -3,7 +3,7 @@ $(document).ready(function () {
     function setArrow() {
         var heroOffset = $('.hero-text').offset();
         $('.arrow').css({
-            'top': heroOffset.top + $('.hero-text').height() + 125 + 'px'
+            'top': heroOffset.top + $('.hero-text').height() + 25 + 'px'
         });
     }
     setArrow();
@@ -22,16 +22,16 @@ $(document).ready(function () {
             top: 60
         }, 600);
         $('.phone-shadow4').animate({
-            top: 85
+            top: 60
         }, 650);
         $('.phone-shadow').animate({
             top: 60
         }, 700);
         $('.phone-shadow2').animate({
-            top: 30
+            top: 60
         }, 800);
         $('.phone-shadow3').animate({
-            top: 0
+            top: 60
         }, 900);
         $('.first-triangle').animate({
             top: -10
@@ -46,16 +46,13 @@ $(document).ready(function () {
                 top: 220
             }, 150);
             $('.watch').animate({
-//                top: 280
-                right: 150
+                top: 60
             }, 900);
             $('.watch2').animate({
-//                top: 335
-                right: 355
+                right: 50
             }, 1000);
             $('.watch3').animate({
-//                top: 350
-                right: 375
+                right: 50
             }, 1100, function () {
                 $('.home').animate({
                     opacity: 1

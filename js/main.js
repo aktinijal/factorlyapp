@@ -1,5 +1,11 @@
 $(document).ready(function () {
-
+    
+    function setSectionHeight(){
+        
+    }
+    
+    
+    
     var x = false;
     some = function () {
         $('.request').css({

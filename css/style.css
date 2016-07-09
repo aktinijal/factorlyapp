@@ -201,16 +201,16 @@
 
 .phone-wrapper {
     position: relative;
-    top: 450px;
-    right: 10%;
-    /*        width: 498px;*/
-    height: 427px;
+    top: 250px;
+    height: auto;
+    width: 40%;
+    left: 60%;
 }
-
 .phone {
     position: absolute;
     right: 0;
     top: -1000px;
+    max-width: 100%;
 }
 
 .phone-shadow,
@@ -218,48 +218,38 @@
 .phone-shadow3,
 .phone-shadow4 {
     position: absolute;
-    right: 45px;
+    right: 0;
     top: -1050px;
+    max-width: 100%;
 }
 
-/*
+.watch-wrapper {
+    position: relative;
+    top: 550px;
+    height: auto;
+    width: 40%;
+    left: 50%;
+}
 .watch {
     position: absolute;
-    right: 150px;
-    top: -700px;
+    right: 50px;
+    top: -1500px;
+    max-width: 100%;
 }
 
 .watch2 {
     position: absolute;
-    right: 355px;
-    top: -775px;
+    right: 4000px;
+    top: 60px;
+    max-width: 100%;
 }
 
 .watch3 {
     position: absolute;
-    right: 375px;
-    top: -790px;
+    right: 4000px;
+    top: 60px;
+    max-width: 100%;
 }
-*/
-
-.watch {
-    position: absolute;
-    right: 4000;
-    top: 280px;
-}
-
-.watch2 {
-    position: absolute;
-    right: 4000;
-    top: 335px;
-}
-
-.watch3 {
-    position: absolute;
-    right: 4000;
-    top: 350px;
-}
-
 
 .arrow {
     opacity: 0;
@@ -267,7 +257,6 @@
     right: 49%;
     cursor: pointer;
 }
-
 
 .wrapper {
     position: absolute;
