@@ -2,13 +2,27 @@ $(document).ready(function () {
     
     function setSectionHeight(){
         var height = $(window).height();
-        $('.hero').height(height - 140);
+        var heroPadTop = $('.hero').css('padding-top');
+        heroPadTop = parseInt(heroPadTop, 10);
+
+        var headerHei = $('.header').css('height');
+        headerHei = parseInt(headerHei, 10);
+        
+        $('.hero').height(height-headerHei-heroPadTop);
         $('.expertize').height(height);
         $('.case').height(height);
         $('.principle').height(height);
+        
+        var pageHeight = $('.wrapper').height();
+        $('.tempor').height(pageHeight);
+        
+        
     }
     setSectionHeight();
     $(window).resize(setSectionHeight);
+    
+    
+        
     
     
     var x = false;
@@ -103,7 +117,6 @@ $(document).ready(function () {
                 });
             });
         });
-
     };
     
     $(window).scroll(function () {

@@ -21,16 +21,16 @@ $(document).ready(function () {
         $('.phone').animate({
             top: 60
         }, 600);
-        $('.phone-shadow4').animate({
-            top: 60
-        }, 650);
         $('.phone-shadow').animate({
             top: 60
-        }, 700);
+        }, 650);
         $('.phone-shadow2').animate({
             top: 60
-        }, 800);
+        }, 700);
         $('.phone-shadow3').animate({
+            top: 60
+        }, 800);
+        $('.phone-shadow4').animate({
             top: 60
         }, 900);
         $('.first-triangle').animate({

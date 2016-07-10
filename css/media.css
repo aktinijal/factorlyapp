@@ -9,26 +9,19 @@
     body {
         font-size: 23px;
     }
-    .tempor {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 4892px;
-        z-index: -1;
-    }
     .first-triangle {
         position: absolute;
         top: -1500px;
         width: 100%;
         height: 1234px;
-        background: url(../img/background-topfirst1900.png) no-repeat top left;
+        background: url(../img/background-topfirst1900.png) no-repeat top right;
     }
     .second-triangle {
         position: absolute;
         top: 1500px;
         width: 100%;
         height: 4642px;
-        background: url(../img/background-topsecond1900.png) no-repeat bottom left;
+        background: url(../img/background-topsecond1900.png) no-repeat bottom right;
     }
     .footer-bg {
         position: absolute;
@@ -166,18 +159,6 @@
         bottom: -91px;
         background: url('../img/customers-right1680.png') no-repeat;
     }
-    .slick-prev.red {
-        right: 200px;
-        bottom: -108px;
-        background: url('../img/customers-left1680.png') no-repeat;
-        background-size: 100%;
-    }
-    .slick-next.red {
-        right: 176px;
-        bottom: -148px;
-        background: url('../img/customers-right1680.png') no-repeat;
-        background-size: 100%;
-    }
     .case {
         margin-bottom: 300px;
     }
@@ -227,7 +208,13 @@
     .cases footer {
         margin-top: 320px;
     }
-    /**************************ABOUT******************/
+    .sliderBig.slick-prev,
+    .sliderBig.slick-next,
+    .cases-slick .slick-prev.red,
+    .cases-slick .slick-next.red {
+        background-size: 75%;
+    }
+    /**************************about.html******************/
     .faces h4.sectionName {
         top: 120px;
     }
@@ -247,6 +234,11 @@
         margin-top: 85px;
         padding-left: 50px;
         background-size: 25%;
+    }
+    .factorly {
+        width: 25%;
+        right: 0;
+        top: 850px;
     }
     .why {
         margin-bottom: 230px;
@@ -270,26 +262,19 @@
 }
 
 @media (max-width: 1680px) {
-    .tempor {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 4892px;
-        z-index: -1;
-    }
     .first-triangle {
         position: absolute;
         top: -1500px;
         width: 100%;
         height: 1051px;
-        background: url(../img/background-topfirst1680.png) no-repeat top left;
+        background: url(../img/background-topfirst1680.png) no-repeat top right;
     }
     .second-triangle {
         position: absolute;
         top: 1500px;
         width: 100%;
         height: 4642px;
-        background: url(../img/background-topsecond16802.png) no-repeat bottom left;
+        background: url(../img/background-topsecond16802.png) no-repeat bottom right;
     }
     .footer-bg {
         position: absolute;
@@ -312,12 +297,9 @@
         zoom: 1;
         opacity: 0;
     }
-    .phone-wrapper {
-        /*        top: 5%;*/
-    }
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1366px) {
     body {
         font-size: 18px;
     }
@@ -330,5 +312,34 @@
     .principle h2 {
         margin-top: 25px;
         margin-bottom: 15px;
+    }
+    /**************about.html***************/
+    .faces {
+        padding-top: 75px;
+    }
+    .face {
+        height: 380px;
+    }
+    .faces .text {
+        left: 35px;
+    }
+    div.plus {
+        margin-top: 35px;
+        padding-top: 20px;
+        padding-left: 25px;
+        background-size: 15%;
+    }
+    .factorly {
+        top: 590px;
+    }
+}
+
+@media (max-width: 1200px) {
+    /**************about.html***************/
+}
+@media (max-width: 768px) {
+    /**************about.html***************/
+    .zoom-face{
+        margin-bottom: 30px;
     }
 }

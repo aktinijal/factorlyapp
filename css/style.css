@@ -35,8 +35,9 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 4892px;
+/*    height: 4892px;*/
     z-index: -1;
+    overflow: hidden;
 }
 
 .first-triangle {
@@ -44,7 +45,7 @@
     top: -2500px;
     width: 100%;
     height: 1871px;
-    background: url(../img/background-topfirst2880.png) no-repeat top left;
+    background: url(../img/background-topfirst2880.png) no-repeat top right;
 }
 
 .second-triangle {
@@ -52,7 +53,7 @@
     top: 2500px;
     width: 100%;
     height: 6915px;
-    background: url(../img/background-topsecond2880.png) no-repeat bottom left;
+    background: url(../img/background-topsecond2880.png) no-repeat bottom right;
 }
 
 .footer-bg {
@@ -620,11 +621,12 @@ div.plus {
 
 div.ambianceSmall:first-child,
 .ambianceSmall:nth-child(2),
-.third,
-.ambianceBig {
+.third {
     margin-bottom: 15px;
 }
-
+.ambianceBig {
+    margin-bottom: 22px;
+}
 .third,
 .fourth,
 .fifth {
